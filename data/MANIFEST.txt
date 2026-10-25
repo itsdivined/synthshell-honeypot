@@ -1,0 +1,47 @@
+status: OK
+source: Magazov, R., Abeshev, K., Shamuratov, Y., Uralova, F. and Aksholak, G. (2026) De-identified SSH honeypot attacker corpus. Zenodo.
+doi: 10.5281/zenodo.20816078
+source_url: https://doi.org/10.5281/zenodo.20816078
+api_url: https://zenodo.org/api/records/20816078
+download_url: https://zenodo.org/api/records/20816078/files/zenodo_deposit.zip/content
+zenodo_licence_id: cc-by-4.0
+licence_data_and_results: CC BY 4.0
+licence_code_and_prompts_inside_zip: MIT
+filename: zenodo_deposit.zip
+byte_size: 4871158
+md5_expected: dc4063023daca19c0a3ef9f8bb340477
+md5_actual: dc4063023daca19c0a3ef9f8bb340477
+md5_ok: true
+accessed: 2026-10-25
+stored_at: data/raw/zenodo_deposit.zip
+git: the zip is gitignored and is not committed
+plan_figure: about 12900 de-identified commands
+command_file_count: 24
+command_row_count: 12881
+distinct_session_ids_in_command_tables: 9324
+per_file_rows:
+  58 data/adaptive/deepseek/commands-2026-06-20.jsonl
+  1078 data/adaptive/deepseek/commands-2026-06-21.jsonl
+  17 data/adaptive/gemini-31-lite/commands-2026-06-20.jsonl
+  835 data/adaptive/gemini-31-lite/commands-2026-06-22.jsonl
+  57 data/adaptive/gemini-flash-lite/commands-2026-06-20.jsonl
+  1089 data/adaptive/gemini-flash-lite/commands-2026-06-22.jsonl
+  17 data/adaptive/gemini-flash/commands-2026-06-20.jsonl
+  1090 data/adaptive/gemini-flash/commands-2026-06-22.jsonl
+  18 data/adaptive/gemma/commands-2026-06-20.jsonl
+  1020 data/adaptive/gemma/commands-2026-06-22.jsonl
+  25 data/adaptive/glm-47/commands-2026-06-20.jsonl
+  898 data/adaptive/glm-47/commands-2026-06-22.jsonl
+  39 data/adaptive/glm-air/commands-2026-06-20.jsonl
+  872 data/adaptive/glm-air/commands-2026-06-21.jsonl
+  44 data/adaptive/llama/commands-2026-06-20.jsonl
+  942 data/adaptive/llama/commands-2026-06-22.jsonl
+  22 data/adaptive/mistral/commands-2026-06-20.jsonl
+  2388 data/adaptive/mistral/commands-2026-06-21.jsonl
+  217 data/adaptive/openai/commands-2026-06-20.jsonl
+  130 data/adaptive/openai/commands-2026-06-21.jsonl
+  728 data/adaptive/openai/commands-2026-06-22.jsonl
+  16 data/adaptive/qwen/commands-2026-06-20.jsonl
+  536 data/adaptive/qwen/commands-2026-06-21.jsonl
+  745 data/adaptive/qwen/commands-2026-06-22.jsonl
+note: Author code and prompts stay inside the zip. This project does not copy them into the source tree.

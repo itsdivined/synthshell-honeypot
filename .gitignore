@@ -1,0 +1,36 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Corpus, logs, and generated tables stay off GitHub.
+data/raw/
+data/logs/*
+!data/logs/.gitkeep
+data/test_set/*
+!data/test_set/.gitkeep
+data/screen_report.txt
+results/*
+!results/.gitkeep
+!results/README.md
+
+# Model weights.
+models/
+*.gguf
+*.bin
+*.safetensors
+
+# Working extracts. The plan documents stay in the folder and are not rewritten.
+_plan_extract.txt
+_slides_extract.txt
+_zenodo_desc.txt
+_zenodo_meta.json
+
+# Course copies already in this folder. The code repo does not republish them.
+*.pdf
+*.docx
+*.pptx
+*.jpeg
+*.jpg

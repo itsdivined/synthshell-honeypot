@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ubuntu ground truth row",
+  "type": "object",
+  "required": ["session_id", "step", "stdout"],
+  "properties": {
+    "session_id": {"type": "string"},
+    "step": {"type": "integer", "minimum": 1},
+    "stdout": {"type": "string"},
+    "stderr": {"type": "string"},
+    "exit_code": {"type": "integer"},
+    "split": {"enum": ["validation", "test"]}
+  },
+  "additionalProperties": false
+}

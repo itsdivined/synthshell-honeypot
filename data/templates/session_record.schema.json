@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Saved session step",
+  "type": "object",
+  "required": ["session_id", "step", "command"],
+  "properties": {
+    "session_id": {"type": "string"},
+    "step": {"type": "integer", "minimum": 1},
+    "command": {"type": "string"},
+    "cwd": {"type": "string"},
+    "technique_label": {"type": "string"},
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {
+            "enum": ["set_cwd", "file_created", "file_changed", "file_deleted", "user_added"]
+          },
+          "path": {"type": "string"},
+          "name": {"type": "string"}
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
