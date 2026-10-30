@@ -4,9 +4,7 @@ Patil Devyani Anil, MSc Data Science (FT), module 7FTC2001. Supervisor: Dr Rama 
 
 Private repository: `itsdivined/synthshell-honeypot`.
 
-This is a closed lab comparison. Sessions are replayed on this machine. Nothing in this project listens on a public address. It is not a live deployment.
 
-Practical work freezes on **14 November 2026**. The project must be ready before 15 November 2026. The report is due 20 November 2026 and the viva is 23 November 2026. The week-by-week plan is in [SCHEDULE.md](SCHEDULE.md).
 
 ## Aim
 
