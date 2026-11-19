@@ -20,7 +20,7 @@ TEST_SET = ROOT / "data" / "test_set" / "sessions.jsonl"
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Replay the same saved sessions on all four systems."
+        description="Replay the same saved sessions on every configured system."
     )
     parser.add_argument("--smoke", action="store_true", help="Use the benign pipeline-check fixture.")
     parser.add_argument("--source", choices=("test-set", "magazov"), default="test-set")
@@ -79,12 +79,16 @@ def main(argv: list[str] | None = None) -> int:
             + (f" | {reason}" if reason else "")
         )
     print(f"Log: {summary['log_path']}")
+    n_systems = len(summary["systems"])
     if summary["study_complete"]:
-        print("Study complete for this log: all four systems returned replies.")
+        print(f"Study complete for this log: all {n_systems} systems returned replies.")
         return 0
-    print("Study incomplete: at least one of the four systems was skipped or returned an error.")
+    print(
+        f"Study incomplete: at least one of the {n_systems} systems was skipped or returned an error."
+    )
     print("The skipped system remains in the comparison. Configure it and replay the same sessions.")
     print(f"Full study runs before the freeze: --runs {RUNS}")
+    print("To plug in an extra local model later, see docs/REUSE.md")
     return 0
 
 

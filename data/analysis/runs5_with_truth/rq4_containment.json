@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "local_bind",
+      "passed": true,
+      "detail": "listen host is 127.0.0.1"
+    },
+    {
+      "name": "cowrie_localhost",
+      "passed": true,
+      "detail": "Cowrie host is 127.0.0.1"
+    },
+    {
+      "name": "ollama_localhost",
+      "passed": true,
+      "detail": "Ollama host is 127.0.0.1"
+    },
+    {
+      "name": "openai_host_pinned",
+      "passed": true,
+      "detail": "GPT-4o mini text calls use api.openai.com only"
+    },
+    {
+      "name": "no_host_execution",
+      "passed": true,
+      "detail": "commands are not passed to the host operating system"
+    },
+    {
+      "name": "no_honeypot_outbound",
+      "passed": true,
+      "detail": "the honeypot has no outbound channel"
+    },
+    {
+      "name": "text_only_output",
+      "passed": true,
+      "detail": "model output type is text"
+    },
+    {
+      "name": "no_model_tools",
+      "passed": true,
+      "detail": "the model is not given a tool"
+    },
+    {
+      "name": "source_has_no_host_shell",
+      "passed": true,
+      "detail": "session and replay source has no host shell and no public bind"
+    }
+  ],
+  "note": "Containment audit only. Injection wording is not stored in this repository."
+}

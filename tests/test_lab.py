@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.analyse import summarise
 from src.backends import Backend, Reply, build_backends, build_openai_body
-from src.config import SYSTEMS, LabConfig
+from src.config import SYSTEMS, LabConfig, active_systems, parse_extra_ollama_models
 from src.containment import passed, audit
 from src.corpus import load_sessions
 from src.fixed_replies import fixed_reply
@@ -67,6 +67,19 @@ class BackendContractTests(unittest.TestCase):
     def test_four_systems_stay_in_order(self) -> None:
         names = [item.system for item in build_backends(LabConfig())]
         self.assertEqual(tuple(names), SYSTEMS)
+
+    def test_extra_ollama_appends_without_dropping_defaults(self) -> None:
+        config = LabConfig(extra_ollama_models=(("mistral-7b", "mistral:7b"),))
+        names = [item.system for item in build_backends(config)]
+        self.assertEqual(tuple(names[:4]), SYSTEMS)
+        self.assertEqual(names[-1], "mistral-7b")
+        self.assertEqual(active_systems(config), SYSTEMS + ("mistral-7b",))
+
+    def test_parse_extra_ollama_models(self) -> None:
+        parsed = parse_extra_ollama_models("mistral-7b=mistral:7b, phi3=phi3:mini")
+        self.assertEqual(parsed, (("mistral-7b", "mistral:7b"), ("phi3", "phi3:mini")))
+        with self.assertRaises(ValueError):
+            parse_extra_ollama_models("cowrie=llama3.1:8b")
 
     def test_openai_body_has_no_tools(self) -> None:
         body = build_openai_body("gpt-4o-mini", 0.0, "pwd")

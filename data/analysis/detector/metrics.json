@@ -1,0 +1,991 @@
+{
+  "meta": {
+    "truth": "C:/Users/devyani patil/honeypot/data/test_set/ground_truth.jsonl",
+    "ubuntu_log": "C:/Users/devyani patil/honeypot/data/logs/replay_ubuntu_testset_runs1.jsonl",
+    "join_only": true,
+    "include_magazov": false,
+    "seed": 25,
+    "source_system_counts": {
+      "real_ubuntu": 160,
+      "cowrie": 160,
+      "llama-3.1-8b": 83,
+      "qwen-2.5-7b": 97
+    },
+    "label_choice": "Primary report tasks are binary (ubuntu vs honeypot) and 3-way (ubuntu / cowrie / llm with llama+qwen pooled). 4-way not primary: smaller per-LLM OK counts and weaker story.",
+    "n_total": 500
+  },
+  "results": [
+    {
+      "task": "binary",
+      "label_key": "label_binary",
+      "label_names": [
+        "real_ubuntu",
+        "honeypot"
+      ],
+      "class_counts_all": {
+        "real_ubuntu": 160,
+        "honeypot": 340
+      },
+      "split": {
+        "n_train": 345,
+        "n_val": 93,
+        "n_test": 62,
+        "sessions_train": [
+          "gt-s01-identity",
+          "gt-s02-home-files",
+          "gt-s04-paths",
+          "gt-s05-navigation",
+          "gt-s06-tmp-lab",
+          "gt-s07-processes",
+          "gt-s08-environment",
+          "gt-s13-shell-builtins",
+          "gt-s15-time",
+          "gt-s16-search-list",
+          "gt-s17-lab-home",
+          "gt-s18-lab-tree",
+          "gt-s19-kernel-readonly",
+          "gt-s20-wrapup"
+        ],
+        "sessions_val": [
+          "gt-s09-local-net",
+          "gt-s10-users",
+          "gt-s11-text-utils"
+        ],
+        "sessions_test": [
+          "gt-s03-system-info",
+          "gt-s12-file-meta",
+          "gt-s14-disk-memory"
+        ],
+        "train_label_counts": {
+          "real_ubuntu": 105,
+          "honeypot": 240
+        },
+        "val_label_counts": {
+          "real_ubuntu": 30,
+          "honeypot": 63
+        },
+        "test_label_counts": {
+          "real_ubuntu": 25,
+          "honeypot": 37
+        }
+      },
+      "train_accuracy": 0.7942028985507247,
+      "val": {
+        "n": 93,
+        "accuracy": 0.7311827956989247,
+        "macro_f1": 0.6623093681917211,
+        "per_class_f1": {
+          "real_ubuntu": 0.5098039215686274,
+          "honeypot": 0.8148148148148148
+        },
+        "per_class_support": {
+          "real_ubuntu": 30,
+          "honeypot": 63
+        },
+        "confusion_matrix": {
+          "labels": [
+            "real_ubuntu",
+            "honeypot"
+          ],
+          "matrix": [
+            [
+              13,
+              17
+            ],
+            [
+              8,
+              55
+            ]
+          ]
+        },
+        "classification_report": {
+          "real_ubuntu": {
+            "precision": 0.6190476190476191,
+            "recall": 0.43333333333333335,
+            "f1-score": 0.5098039215686274,
+            "support": 30.0
+          },
+          "honeypot": {
+            "precision": 0.7638888888888888,
+            "recall": 0.873015873015873,
+            "f1-score": 0.8148148148148148,
+            "support": 63.0
+          },
+          "accuracy": 0.7311827956989247,
+          "macro avg": {
+            "precision": 0.691468253968254,
+            "recall": 0.6531746031746032,
+            "f1-score": 0.6623093681917211,
+            "support": 93.0
+          },
+          "weighted avg": {
+            "precision": 0.7171658986175115,
+            "recall": 0.7311827956989247,
+            "f1-score": 0.7164242040902382,
+            "support": 93.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.6583687029269245,
+          "low": 0.540771386627519,
+          "high": 0.768944099378882,
+          "n_resamples": 500
+        },
+        "auroc": 0.7965608465608465,
+        "positive_class": "honeypot"
+      },
+      "test": {
+        "n": 62,
+        "accuracy": 0.7580645161290323,
+        "macro_f1": 0.750201450443191,
+        "per_class_f1": {
+          "real_ubuntu": 0.7058823529411765,
+          "honeypot": 0.7945205479452054
+        },
+        "per_class_support": {
+          "real_ubuntu": 25,
+          "honeypot": 37
+        },
+        "confusion_matrix": {
+          "labels": [
+            "real_ubuntu",
+            "honeypot"
+          ],
+          "matrix": [
+            [
+              18,
+              7
+            ],
+            [
+              8,
+              29
+            ]
+          ]
+        },
+        "classification_report": {
+          "real_ubuntu": {
+            "precision": 0.6923076923076923,
+            "recall": 0.72,
+            "f1-score": 0.7058823529411765,
+            "support": 25.0
+          },
+          "honeypot": {
+            "precision": 0.8055555555555556,
+            "recall": 0.7837837837837838,
+            "f1-score": 0.7945205479452054,
+            "support": 37.0
+          },
+          "accuracy": 0.7580645161290323,
+          "macro avg": {
+            "precision": 0.7489316239316239,
+            "recall": 0.7518918918918919,
+            "f1-score": 0.750201450443191,
+            "support": 62.0
+          },
+          "weighted avg": {
+            "precision": 0.7598910945685139,
+            "recall": 0.7580645161290323,
+            "f1-score": 0.7587793402822905,
+            "support": 62.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.7495998939818905,
+          "low": 0.6260964912280702,
+          "high": 0.8529644268774703,
+          "n_resamples": 500
+        },
+        "auroc": 0.8745945945945947,
+        "positive_class": "honeypot"
+      },
+      "top_char_ngrams": {
+        "real_ubuntu": [
+          " 11",
+          " 50",
+          "05 ",
+          " 17",
+          "11 ",
+          " 23:",
+          "23:",
+          " 23",
+          "23:5",
+          "3:5",
+          " 23:5",
+          "-11",
+          "own ",
+          "wn ",
+          " 0."
+        ],
+        "honeypot": [
+          " ls",
+          " ls ",
+          "wd ",
+          "pwd ",
+          "ls ",
+          "pwd",
+          " pwd ",
+          " pwd",
+          " pw",
+          " 14",
+          "er ",
+          "abus",
+          "buser",
+          "labus",
+          "abu"
+        ]
+      },
+      "vectorizer": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "max_features": 20000,
+        "min_df": 2
+      },
+      "classifier": "LogisticRegression(class_weight=balanced, solver=lbfgs)"
+    },
+    {
+      "task": "3way",
+      "label_key": "label_3way",
+      "label_names": [
+        "ubuntu",
+        "cowrie",
+        "llm"
+      ],
+      "class_counts_all": {
+        "ubuntu": 160,
+        "cowrie": 160,
+        "llm": 180
+      },
+      "split": {
+        "n_train": 345,
+        "n_val": 93,
+        "n_test": 62,
+        "sessions_train": [
+          "gt-s01-identity",
+          "gt-s02-home-files",
+          "gt-s04-paths",
+          "gt-s05-navigation",
+          "gt-s06-tmp-lab",
+          "gt-s07-processes",
+          "gt-s08-environment",
+          "gt-s13-shell-builtins",
+          "gt-s15-time",
+          "gt-s16-search-list",
+          "gt-s17-lab-home",
+          "gt-s18-lab-tree",
+          "gt-s19-kernel-readonly",
+          "gt-s20-wrapup"
+        ],
+        "sessions_val": [
+          "gt-s09-local-net",
+          "gt-s10-users",
+          "gt-s11-text-utils"
+        ],
+        "sessions_test": [
+          "gt-s03-system-info",
+          "gt-s12-file-meta",
+          "gt-s14-disk-memory"
+        ],
+        "train_label_counts": {
+          "ubuntu": 105,
+          "cowrie": 105,
+          "llm": 135
+        },
+        "val_label_counts": {
+          "ubuntu": 30,
+          "cowrie": 30,
+          "llm": 33
+        },
+        "test_label_counts": {
+          "ubuntu": 25,
+          "cowrie": 25,
+          "llm": 12
+        }
+      },
+      "train_accuracy": 0.8492753623188406,
+      "val": {
+        "n": 93,
+        "accuracy": 0.6881720430107527,
+        "macro_f1": 0.686138014527845,
+        "per_class_f1": {
+          "ubuntu": 0.576271186440678,
+          "cowrie": 0.8571428571428571,
+          "llm": 0.625
+        },
+        "per_class_support": {
+          "ubuntu": 30,
+          "cowrie": 30,
+          "llm": 33
+        },
+        "confusion_matrix": {
+          "labels": [
+            "ubuntu",
+            "cowrie",
+            "llm"
+          ],
+          "matrix": [
+            [
+              17,
+              4,
+              9
+            ],
+            [
+              1,
+              27,
+              2
+            ],
+            [
+              11,
+              2,
+              20
+            ]
+          ]
+        },
+        "classification_report": {
+          "ubuntu": {
+            "precision": 0.5862068965517241,
+            "recall": 0.5666666666666667,
+            "f1-score": 0.576271186440678,
+            "support": 30.0
+          },
+          "cowrie": {
+            "precision": 0.8181818181818182,
+            "recall": 0.9,
+            "f1-score": 0.8571428571428571,
+            "support": 30.0
+          },
+          "llm": {
+            "precision": 0.6451612903225806,
+            "recall": 0.6060606060606061,
+            "f1-score": 0.625,
+            "support": 33.0
+          },
+          "accuracy": 0.6881720430107527,
+          "macro avg": {
+            "precision": 0.6831833350187076,
+            "recall": 0.6909090909090909,
+            "f1-score": 0.686138014527845,
+            "support": 93.0
+          },
+          "weighted avg": {
+            "precision": 0.6819568174478648,
+            "recall": 0.6881720430107527,
+            "f1-score": 0.6841658205108178,
+            "support": 93.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.6826571009626723,
+          "low": 0.5877540724688778,
+          "high": 0.7707070707070707,
+          "n_resamples": 500
+        },
+        "auroc_ovr_macro": 0.8611872695206029
+      },
+      "test": {
+        "n": 62,
+        "accuracy": 0.6935483870967742,
+        "macro_f1": 0.682487922705314,
+        "per_class_f1": {
+          "ubuntu": 0.7083333333333334,
+          "cowrie": 0.7391304347826086,
+          "llm": 0.6
+        },
+        "per_class_support": {
+          "ubuntu": 25,
+          "cowrie": 25,
+          "llm": 12
+        },
+        "confusion_matrix": {
+          "labels": [
+            "ubuntu",
+            "cowrie",
+            "llm"
+          ],
+          "matrix": [
+            [
+              17,
+              2,
+              6
+            ],
+            [
+              5,
+              17,
+              3
+            ],
+            [
+              1,
+              2,
+              9
+            ]
+          ]
+        },
+        "classification_report": {
+          "ubuntu": {
+            "precision": 0.7391304347826086,
+            "recall": 0.68,
+            "f1-score": 0.7083333333333334,
+            "support": 25.0
+          },
+          "cowrie": {
+            "precision": 0.8095238095238095,
+            "recall": 0.68,
+            "f1-score": 0.7391304347826086,
+            "support": 25.0
+          },
+          "llm": {
+            "precision": 0.5,
+            "recall": 0.75,
+            "f1-score": 0.6,
+            "support": 12.0
+          },
+          "accuracy": 0.6935483870967742,
+          "macro avg": {
+            "precision": 0.6828847481021394,
+            "recall": 0.7033333333333335,
+            "f1-score": 0.682487922705314,
+            "support": 62.0
+          },
+          "weighted avg": {
+            "precision": 0.7212315501235557,
+            "recall": 0.6935483870967742,
+            "f1-score": 0.6997837774661056,
+            "support": 62.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.6791984120737514,
+          "low": 0.5552706552706552,
+          "high": 0.7930602925300699,
+          "n_resamples": 500
+        },
+        "auroc_ovr_macro": 0.8875375375375375
+      },
+      "top_char_ngrams": {
+        "cowrie": [
+          " ls",
+          " ls ",
+          " pwd ",
+          " pwd",
+          " pw",
+          "ls ",
+          "pwd ",
+          "pwd",
+          "wd ",
+          " ca",
+          "at ",
+          " cat ",
+          "cat ",
+          "me ",
+          "ho "
+        ],
+        "llm": [
+          "00 ",
+          " ./",
+          " 16",
+          " ```",
+          " ``",
+          "```",
+          "untu",
+          "bunt",
+          "bun",
+          "ntu",
+          "buntu",
+          "ubun",
+          "ubunt",
+          "ubu",
+          " /bi"
+        ],
+        "ubuntu": [
+          " 11",
+          " 50",
+          "05 ",
+          " 17",
+          "23:",
+          " 23",
+          " 23:",
+          "11 ",
+          " 23:5",
+          "23:5",
+          "3:5",
+          "wn ",
+          "own ",
+          "-11",
+          ":53"
+        ]
+      },
+      "vectorizer": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "max_features": 20000,
+        "min_df": 2
+      },
+      "classifier": "LogisticRegression(class_weight=balanced, solver=lbfgs)"
+    },
+    {
+      "task": "ubuntu_vs_llm",
+      "label_key": "label_ub_llm",
+      "label_names": [
+        "real_ubuntu",
+        "llm"
+      ],
+      "class_counts_all": {
+        "real_ubuntu": 160,
+        "llm": 180
+      },
+      "split": {
+        "n_train": 240,
+        "n_val": 63,
+        "n_test": 37,
+        "sessions_train": [
+          "gt-s01-identity",
+          "gt-s02-home-files",
+          "gt-s04-paths",
+          "gt-s05-navigation",
+          "gt-s06-tmp-lab",
+          "gt-s07-processes",
+          "gt-s08-environment",
+          "gt-s13-shell-builtins",
+          "gt-s15-time",
+          "gt-s16-search-list",
+          "gt-s17-lab-home",
+          "gt-s18-lab-tree",
+          "gt-s19-kernel-readonly",
+          "gt-s20-wrapup"
+        ],
+        "sessions_val": [
+          "gt-s09-local-net",
+          "gt-s10-users",
+          "gt-s11-text-utils"
+        ],
+        "sessions_test": [
+          "gt-s03-system-info",
+          "gt-s12-file-meta",
+          "gt-s14-disk-memory"
+        ],
+        "train_label_counts": {
+          "real_ubuntu": 105,
+          "llm": 135
+        },
+        "val_label_counts": {
+          "real_ubuntu": 30,
+          "llm": 33
+        },
+        "test_label_counts": {
+          "real_ubuntu": 25,
+          "llm": 12
+        }
+      },
+      "train_accuracy": 0.7916666666666666,
+      "val": {
+        "n": 63,
+        "accuracy": 0.6349206349206349,
+        "macro_f1": 0.6345523329129887,
+        "per_class_f1": {
+          "real_ubuntu": 0.6461538461538462,
+          "llm": 0.6229508196721312
+        },
+        "per_class_support": {
+          "real_ubuntu": 30,
+          "llm": 33
+        },
+        "confusion_matrix": {
+          "labels": [
+            "real_ubuntu",
+            "llm"
+          ],
+          "matrix": [
+            [
+              21,
+              9
+            ],
+            [
+              14,
+              19
+            ]
+          ]
+        },
+        "classification_report": {
+          "real_ubuntu": {
+            "precision": 0.6,
+            "recall": 0.7,
+            "f1-score": 0.6461538461538462,
+            "support": 30.0
+          },
+          "llm": {
+            "precision": 0.6785714285714286,
+            "recall": 0.5757575757575758,
+            "f1-score": 0.6229508196721312,
+            "support": 33.0
+          },
+          "accuracy": 0.6349206349206349,
+          "macro avg": {
+            "precision": 0.6392857142857142,
+            "recall": 0.6378787878787879,
+            "f1-score": 0.6345523329129887,
+            "support": 63.0
+          },
+          "weighted avg": {
+            "precision": 0.641156462585034,
+            "recall": 0.6349206349206349,
+            "f1-score": 0.6339998799015193,
+            "support": 63.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.6333530513326999,
+          "low": 0.5074401008827238,
+          "high": 0.7603260869565217,
+          "n_resamples": 500
+        },
+        "auroc": 0.7247474747474747,
+        "positive_class": "llm"
+      },
+      "test": {
+        "n": 37,
+        "accuracy": 0.8108108108108109,
+        "macro_f1": 0.8015325670498084,
+        "per_class_f1": {
+          "real_ubuntu": 0.8444444444444444,
+          "llm": 0.7586206896551724
+        },
+        "per_class_support": {
+          "real_ubuntu": 25,
+          "llm": 12
+        },
+        "confusion_matrix": {
+          "labels": [
+            "real_ubuntu",
+            "llm"
+          ],
+          "matrix": [
+            [
+              19,
+              6
+            ],
+            [
+              1,
+              11
+            ]
+          ]
+        },
+        "classification_report": {
+          "real_ubuntu": {
+            "precision": 0.95,
+            "recall": 0.76,
+            "f1-score": 0.8444444444444444,
+            "support": 25.0
+          },
+          "llm": {
+            "precision": 0.6470588235294118,
+            "recall": 0.9166666666666666,
+            "f1-score": 0.7586206896551724,
+            "support": 12.0
+          },
+          "accuracy": 0.8108108108108109,
+          "macro avg": {
+            "precision": 0.7985294117647059,
+            "recall": 0.8383333333333334,
+            "f1-score": 0.8015325670498084,
+            "support": 37.0
+          },
+          "weighted avg": {
+            "precision": 0.8517488076311606,
+            "recall": 0.8108108108108109,
+            "f1-score": 0.8166097131614373,
+            "support": 37.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.7984564314480049,
+          "low": 0.6444937176644494,
+          "high": 0.9353146853146853,
+          "n_resamples": 500
+        },
+        "auroc": 0.9266666666666666,
+        "positive_class": "llm"
+      },
+      "top_char_ngrams": {
+        "real_ubuntu": [
+          " 11",
+          "05 ",
+          " 50",
+          " la",
+          "11 ",
+          "-11",
+          "2026",
+          "026",
+          " 2026",
+          " 23",
+          " 23:",
+          "23:",
+          "wn ",
+          "own ",
+          "23:5"
+        ],
+        "llm": [
+          "00 ",
+          " 16",
+          " ./",
+          " 14",
+          " ``",
+          " ```",
+          "```",
+          " /b",
+          " /bi",
+          " /bin",
+          "otal ",
+          "tal ",
+          " tota",
+          " tot",
+          " 2023"
+        ]
+      },
+      "vectorizer": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "max_features": 20000,
+        "min_df": 2
+      },
+      "classifier": "LogisticRegression(class_weight=balanced, solver=lbfgs)"
+    },
+    {
+      "task": "ubuntu_vs_cowrie",
+      "label_key": "label_ub_cow",
+      "label_names": [
+        "real_ubuntu",
+        "cowrie"
+      ],
+      "class_counts_all": {
+        "real_ubuntu": 160,
+        "cowrie": 160
+      },
+      "split": {
+        "n_train": 210,
+        "n_val": 60,
+        "n_test": 50,
+        "sessions_train": [
+          "gt-s01-identity",
+          "gt-s02-home-files",
+          "gt-s04-paths",
+          "gt-s05-navigation",
+          "gt-s06-tmp-lab",
+          "gt-s07-processes",
+          "gt-s08-environment",
+          "gt-s13-shell-builtins",
+          "gt-s15-time",
+          "gt-s16-search-list",
+          "gt-s17-lab-home",
+          "gt-s18-lab-tree",
+          "gt-s19-kernel-readonly",
+          "gt-s20-wrapup"
+        ],
+        "sessions_val": [
+          "gt-s09-local-net",
+          "gt-s10-users",
+          "gt-s11-text-utils"
+        ],
+        "sessions_test": [
+          "gt-s03-system-info",
+          "gt-s12-file-meta",
+          "gt-s14-disk-memory"
+        ],
+        "train_label_counts": {
+          "real_ubuntu": 105,
+          "cowrie": 105
+        },
+        "val_label_counts": {
+          "real_ubuntu": 30,
+          "cowrie": 30
+        },
+        "test_label_counts": {
+          "real_ubuntu": 25,
+          "cowrie": 25
+        }
+      },
+      "train_accuracy": 0.9619047619047619,
+      "val": {
+        "n": 60,
+        "accuracy": 0.8833333333333333,
+        "macro_f1": 0.883300916921367,
+        "per_class_f1": {
+          "real_ubuntu": 0.8813559322033898,
+          "cowrie": 0.8852459016393442
+        },
+        "per_class_support": {
+          "real_ubuntu": 30,
+          "cowrie": 30
+        },
+        "confusion_matrix": {
+          "labels": [
+            "real_ubuntu",
+            "cowrie"
+          ],
+          "matrix": [
+            [
+              26,
+              4
+            ],
+            [
+              3,
+              27
+            ]
+          ]
+        },
+        "classification_report": {
+          "real_ubuntu": {
+            "precision": 0.896551724137931,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.8813559322033898,
+            "support": 30.0
+          },
+          "cowrie": {
+            "precision": 0.8709677419354839,
+            "recall": 0.9,
+            "f1-score": 0.8852459016393442,
+            "support": 30.0
+          },
+          "accuracy": 0.8833333333333333,
+          "macro avg": {
+            "precision": 0.8837597330367075,
+            "recall": 0.8833333333333333,
+            "f1-score": 0.883300916921367,
+            "support": 60.0
+          },
+          "weighted avg": {
+            "precision": 0.8837597330367075,
+            "recall": 0.8833333333333333,
+            "f1-score": 0.883300916921367,
+            "support": 60.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.8809692119430861,
+          "low": 0.7916666666666667,
+          "high": 0.9499861072520144,
+          "n_resamples": 500
+        },
+        "auroc": 0.93,
+        "positive_class": "cowrie"
+      },
+      "test": {
+        "n": 50,
+        "accuracy": 0.8,
+        "macro_f1": 0.797077922077922,
+        "per_class_f1": {
+          "real_ubuntu": 0.8214285714285714,
+          "cowrie": 0.7727272727272727
+        },
+        "per_class_support": {
+          "real_ubuntu": 25,
+          "cowrie": 25
+        },
+        "confusion_matrix": {
+          "labels": [
+            "real_ubuntu",
+            "cowrie"
+          ],
+          "matrix": [
+            [
+              23,
+              2
+            ],
+            [
+              8,
+              17
+            ]
+          ]
+        },
+        "classification_report": {
+          "real_ubuntu": {
+            "precision": 0.7419354838709677,
+            "recall": 0.92,
+            "f1-score": 0.8214285714285714,
+            "support": 25.0
+          },
+          "cowrie": {
+            "precision": 0.8947368421052632,
+            "recall": 0.68,
+            "f1-score": 0.7727272727272727,
+            "support": 25.0
+          },
+          "accuracy": 0.8,
+          "macro avg": {
+            "precision": 0.8183361629881154,
+            "recall": 0.8,
+            "f1-score": 0.797077922077922,
+            "support": 50.0
+          },
+          "weighted avg": {
+            "precision": 0.8183361629881154,
+            "recall": 0.8,
+            "f1-score": 0.797077922077922,
+            "support": 50.0
+          }
+        },
+        "bootstrap_macro_f1": {
+          "mean": 0.7933953903199754,
+          "low": 0.6715927750410509,
+          "high": 0.898989898989899,
+          "n_resamples": 500
+        },
+        "auroc": 0.8992,
+        "positive_class": "cowrie"
+      },
+      "top_char_ngrams": {
+        "real_ubuntu": [
+          "ntu",
+          "bun",
+          "ubun",
+          "untu",
+          "bunt",
+          "ubunt",
+          "buntu",
+          "ubu",
+          "unt",
+          "ntu ",
+          "untu ",
+          "tu ",
+          " / ",
+          " 11",
+          "05 "
+        ],
+        "cowrie": [
+          " ls",
+          " ls ",
+          "pwd ",
+          "ls ",
+          "wd ",
+          "pwd",
+          " pwd ",
+          " pw",
+          " pwd",
+          " ca",
+          "at ",
+          "buse",
+          "abuse",
+          "abu",
+          "abus"
+        ]
+      },
+      "vectorizer": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "max_features": 20000,
+        "min_df": 2
+      },
+      "classifier": "LogisticRegression(class_weight=balanced, solver=lbfgs)"
+    }
+  ]
+}

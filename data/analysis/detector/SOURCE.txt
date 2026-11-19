@@ -1,0 +1,5 @@
+Truth: C:\Users\devyani patil\honeypot\data\test_set\ground_truth.jsonl
+Ubuntu replay log: C:\Users\devyani patil\honeypot\data\logs\replay_ubuntu_testset_runs1.jsonl
+Script: scripts/06_train_detector.py
+join_only=True include_magazov=False seed=25
+n_total=500
