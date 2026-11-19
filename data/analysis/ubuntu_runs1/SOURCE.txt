@@ -1,0 +1,4 @@
+Source log: C:\Users\devyani patil\honeypot\data\logs\replay_ubuntu_testset_runs1.jsonl
+Script: scripts/05_analyse.py --log <path> --out-dir <dir>
+Ground truth present: True
+Command rows scored: 800

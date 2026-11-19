@@ -8,13 +8,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# The comparison is these four systems, on the same sessions.
+# Default dissertation comparison (same sessions, same four rows).
+# Extra local models can be appended via EXTRA_OLLAMA_MODELS — see docs/REUSE.md.
 SYSTEMS = (
     "cowrie",
     "gpt-4o-mini",
     "llama-3.1-8b",
     "qwen-2.5-7b",
 )
+BASE_SYSTEMS = SYSTEMS
 
 TEMPERATURES = (0.0, 0.2, 0.5)
 HISTORY_WINDOWS = (5, 10, 20)
@@ -57,10 +59,44 @@ class LabConfig:
     qwen_model: str = "qwen2.5:7b"
     openai_model: str = "gpt-4o-mini"
     openai_api_key: str = ""
+    # Extra local Ollama slots: (("mistral-7b", "mistral:7b"), ...)
+    extra_ollama_models: tuple[tuple[str, str], ...] = ()
     execute_commands_on_host: bool = False
     allow_honeypot_outbound: bool = False
     model_output_type: str = "text"
     model_tools: tuple = ()
+
+
+def parse_extra_ollama_models(raw: str) -> tuple[tuple[str, str], ...]:
+    """Parse EXTRA_OLLAMA_MODELS=name=tag,name=tag (comma-separated)."""
+    items: list[tuple[str, str]] = []
+    reserved = set(BASE_SYSTEMS)
+    seen: set[str] = set()
+    for part in raw.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        if "=" not in part:
+            raise ValueError(
+                "EXTRA_OLLAMA_MODELS entries must look like name=ollama_tag "
+                "(example: mistral-7b=mistral:7b)"
+            )
+        name, tag = part.split("=", 1)
+        name = name.strip()
+        tag = tag.strip()
+        if not name or not tag:
+            raise ValueError("EXTRA_OLLAMA_MODELS needs both a short name and an Ollama tag")
+        if name in reserved or name in seen:
+            raise ValueError(f"duplicate or reserved system name in EXTRA_OLLAMA_MODELS: {name}")
+        seen.add(name)
+        items.append((name, tag))
+    return tuple(items)
+
+
+def active_systems(config: LabConfig) -> tuple[str, ...]:
+    """Default four systems, plus any plugged-in local models."""
+    extras = tuple(name for name, _tag in config.extra_ollama_models)
+    return BASE_SYSTEMS + extras
 
 
 def load_env_file(path: Path | None = None) -> None:
@@ -106,6 +142,8 @@ def load_config() -> LabConfig:
         cowrie_port = int(os.environ.get("COWRIE_PORT", "2222"))
     except ValueError:
         cowrie_port = 2222
+    extra_raw = os.environ.get("EXTRA_OLLAMA_MODELS", "").strip()
+    extra_ollama = parse_extra_ollama_models(extra_raw) if extra_raw else ()
     return LabConfig(
         listen_host=os.environ.get("HONEYPOT_BIND", "127.0.0.1").strip() or "127.0.0.1",
         listen_port=cowrie_port,
@@ -119,6 +157,7 @@ def load_config() -> LabConfig:
         qwen_model=os.environ.get("QWEN_MODEL", "qwen2.5:7b").strip() or "qwen2.5:7b",
         openai_model=os.environ.get("OPENAI_MODEL", "gpt-4o-mini").strip() or "gpt-4o-mini",
         openai_api_key=os.environ.get("OPENAI_API_KEY", "").strip(),
+        extra_ollama_models=extra_ollama,
     )
 
 

@@ -32,6 +32,7 @@ LLM honeypots already exist. The novelty is what is measured and how:
 - C2. A reusable test set of about 200 commands and 20 scripted multi-step sessions, with ground-truth outputs.
 - C3. A controlled comparison of three LLMs and Cowrie on realism, consistency, speed, cost, and session survival.
 - C4. Technique-label counts and the containment audit, with design recommendations for a low-cost honeypot.
+- C5. A reusable comparison lab: others can swap Ollama tags or plug in extra local models via `.env` and re-run the same session list (see [docs/REUSE.md](docs/REUSE.md)).
 
 ## Research questions and objectives
 
@@ -107,6 +108,16 @@ ollama pull qwen2.5:7b
 ```
 
 Ollama must listen on `127.0.0.1` only.
+
+### Plug in another model (reuse)
+
+Keep Cowrie + the default slots, then either change `LLAMA_MODEL` / `QWEN_MODEL` or add:
+
+```env
+EXTRA_OLLAMA_MODELS=mistral-7b=mistral:7b
+```
+
+Re-run `scripts/04_replay.py` on the same session file and `scripts/05_analyse.py` on the new log. Step-by-step: [docs/REUSE.md](docs/REUSE.md).
 
 ## How to reproduce
 

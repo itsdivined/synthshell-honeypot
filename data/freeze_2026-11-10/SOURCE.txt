@@ -1,0 +1,11 @@
+Freeze date: 2026-11-10
+Package: data/freeze_2026-11-10/
+
+Source log: C:\Users\devyani patil\honeypot\data\logs\replay_magazov_20sess_runs5.jsonl
+Log finished (mtime): 2026-11-07 ~17:31 local
+Script: scripts/05_analyse.py --log data\logs\replay_magazov_20sess_runs5.jsonl --out-dir data\analysis\runs5
+Canonical analysis copy: data\analysis\runs5\
+Ground truth present: False
+Command rows scored: 1400
+
+Copies in this freeze folder: tables.md, summary.json, rq4_containment.json

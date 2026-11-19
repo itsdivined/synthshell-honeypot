@@ -364,12 +364,16 @@ class OllamaBackend(Backend):
 
 
 def build_backends(config: LabConfig) -> list[Backend]:
-    return [
+    """Default four systems, then any EXTRA_OLLAMA_MODELS plugged in via .env."""
+    backends: list[Backend] = [
         CowrieBackend(config),
         OpenAIBackend(config),
         OllamaBackend(config, "llama-3.1-8b", config.llama_model),
         OllamaBackend(config, "qwen-2.5-7b", config.qwen_model),
     ]
+    for name, tag in config.extra_ollama_models:
+        backends.append(OllamaBackend(config, name, tag))
+    return backends
 
 
 def _read_channel(channel, seconds: float) -> str:

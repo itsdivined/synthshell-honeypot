@@ -8,8 +8,27 @@ import random
 from collections import defaultdict
 from pathlib import Path
 
-from src.config import SYSTEMS
+from src.config import BASE_SYSTEMS, SYSTEMS
 from src.containment import as_dicts, audit, passed
+
+
+def systems_in_log(rows: list[dict]) -> tuple[str, ...]:
+    """Prefer the run header; otherwise keep dissertation order then any extras."""
+    for row in rows:
+        if row.get("record_type") == "run" and row.get("systems"):
+            return tuple(str(name) for name in row["systems"])
+    seen: list[str] = []
+    for row in rows:
+        if row.get("record_type") != "command":
+            continue
+        name = str(row.get("system") or "")
+        if name and name not in seen:
+            seen.append(name)
+    if not seen:
+        return SYSTEMS
+    ordered = [name for name in BASE_SYSTEMS if name in seen]
+    ordered.extend(name for name in seen if name not in BASE_SYSTEMS)
+    return tuple(ordered)
 
 
 def load_log(path: Path) -> list[dict]:
@@ -70,7 +89,8 @@ def _cost(row: dict, rates: tuple[float | None, float | None]) -> float | None:
     system = row.get("system")
     if row.get("status") != "ok":
         return None
-    if system in {"cowrie", "llama-3.1-8b", "qwen-2.5-7b"}:
+    # Cowrie and local Ollama rows are treated as zero API cost.
+    if system != "gpt-4o-mini":
         return 0.0
     input_rate, output_rate = rates
     if input_rate is None or output_rate is None:
@@ -199,8 +219,9 @@ def load_ground_truth(path: Path | None) -> dict[tuple, str]:
 def summarise(rows: list[dict], truth: dict[tuple, str] | None = None) -> dict:
     truth = truth or {}
     command_rows = [row for row in rows if row.get("record_type") == "command"]
+    study_systems = systems_in_log(rows)
     rates = _rates()
-    by_system: dict[str, list[dict]] = {name: [] for name in SYSTEMS}
+    by_system: dict[str, list[dict]] = {name: [] for name in study_systems}
     for row in command_rows:
         system = row.get("system")
         if system in by_system:
@@ -208,7 +229,7 @@ def summarise(rows: list[dict], truth: dict[tuple, str] | None = None) -> dict:
 
     session_scores: dict[str, dict[tuple, int | None]] = {}
     systems_out = []
-    for name in SYSTEMS:
+    for name in study_systems:
         group = by_system[name]
         ok_rows = [row for row in group if row.get("status") == "ok"]
         delays = [float(row["delay_seconds"]) for row in ok_rows]
@@ -253,8 +274,8 @@ def summarise(rows: list[dict], truth: dict[tuple, str] | None = None) -> dict:
         )
 
     tests = []
-    baseline = session_scores["cowrie"]
-    for name in SYSTEMS:
+    baseline = session_scores.get("cowrie", {})
+    for name in study_systems:
         if name == "cowrie":
             continue
         pairs = []
@@ -285,7 +306,7 @@ def render_markdown(summary: dict) -> str:
     lines = [
         "# Comparison tables",
         "",
-        "All four systems stay in the table. A skip is a missing run, not a removed system.",
+        "Every configured system stays in the table. A skip is a missing run, not a removed system.",
         "",
         "| System | Status | Logged | OK replies | Skipped | Mean delay (s) | Delay 95% CI | Mean commands completed | Fidelity | Consistency | Invented content | Cost USD | Technique labels |",
         "| --- | --- | ---: | ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |",
@@ -325,11 +346,12 @@ def render_markdown(summary: dict) -> str:
     lines.append("")
     lines.append(audit_result["note"])
     lines.append("")
+    n_systems = len(summary["systems"])
     if summary["study_complete"]:
-        lines.append("Study status: all four systems returned replies for this log.")
+        lines.append(f"Study status: all {n_systems} systems returned replies for this log.")
     else:
         lines.append(
-            "Study status: the four-system comparison is not complete in this log. "
+            f"Study status: the {n_systems}-system comparison is not complete in this log. "
             "Skipped systems remain part of the design."
         )
     lines.append("")
