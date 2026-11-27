@@ -1,0 +1,12 @@
+# Lab Cowrie settings
+# Copy these keys into the cowrie.cfg that ships with the Cowrie version you install.
+# Keep every interface on 127.0.0.1.
+# Modern Cowrie uses listen_endpoints (Twisted endpoint syntax). Do not use obsolete listen_addr / listen_port.
+
+[ssh]
+enabled = true
+listen_endpoints = tcp:2222:interface=127.0.0.1
+
+[telnet]
+enabled = false
+listen_endpoints = tcp:2223:interface=127.0.0.1

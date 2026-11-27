@@ -1,0 +1,6 @@
+IP screen counts only. Command text is not included.
+author_placeholder_addresses: 64
+reserved_or_private_addresses: 190
+public_addresses_needing_review: 0
+Username review is a manual read of the de-identified tables.
+This script does not guess usernames from command text.

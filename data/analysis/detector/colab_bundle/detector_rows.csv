@@ -1,0 +1,1145 @@
+session_id,step,source_system,label_binary,label_3way,text,raw_len
+gt-s01-identity,1,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s01-identity,2,real_ubuntu,real_ubuntu,ubuntu,"uid=1000(ubuntu) gid=1001(ubuntu) groups=1001(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),1000(lxd)",98
+gt-s01-identity,3,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s01-identity,4,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53,16
+gt-s01-identity,5,real_ubuntu,real_ubuntu,ubuntu,Linux LAPTOP-N1NKKV53 6.18.58.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux,139
+gt-s01-identity,6,real_ubuntu,real_ubuntu,ubuntu,6.18.58.1-microsoft-standard-WSL2,34
+gt-s01-identity,7,real_ubuntu,real_ubuntu,ubuntu,ubuntu adm cdrom sudo dip lxd,30
+gt-s01-identity,8,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s01-identity,9,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s01-identity,10,real_ubuntu,real_ubuntu,ubuntu,Wed Nov 11 23:53:05 +08 2026,29
+gt-s02-home-files,1,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s02-home-files,3,real_ubuntu,real_ubuntu,ubuntu,"total 28
+drwxr-x--- 4 ubuntu ubuntu 4096 Nov 11 23:52 .
+drwxr-xr-x 3 root root 4096 Nov 11 23:49 ..
+-rw-r--r-- 1 ubuntu ubuntu 220 Mar 31 2024 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu 3771 Mar 31 2024 .bashrc
+drwx------ 2 ubuntu ubuntu 4096 Nov 11 23:52 .cache
+-rw-rw-r-- 1 ubuntu ubuntu 0 Nov 11 23:52 .motd_shown
+-rw-r--r-- 1 ubuntu ubuntu 807 Mar 31 2024 .profile
+drwx------ 2 ubuntu ubuntu 4096 Nov 11 23:49 .ssh",428
+gt-s02-home-files,4,real_ubuntu,real_ubuntu,ubuntu,".
+..
+.bash_logout
+.bashrc
+.cache
+.motd_shown
+.profile
+.ssh",59
+gt-s02-home-files,6,real_ubuntu,real_ubuntu,ubuntu,notes.txt,10
+gt-s02-home-files,9,real_ubuntu,real_ubuntu,ubuntu,hello,6
+gt-s03-system-info,1,real_ubuntu,real_ubuntu,ubuntu,"PRETTY_NAME=""Ubuntu 24.04 LTS""
+NAME=""Ubuntu""
+VERSION_ID=""24.04""
+VERSION=""24.04 LTS (Noble Numbat)""
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL=""https://www.ubuntu.com/""
+SUPPORT_URL=""https://help.ubuntu.com/""
+BUG_REPORT_URL=""https://bugs.launchpad.net/ubuntu/""
+PRIVACY_POLICY_URL=""https://www.ubuntu.com/legal/terms-and-policies/privacy-policy""
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo",396
+gt-s03-system-info,2,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53,16
+gt-s03-system-info,3,real_ubuntu,real_ubuntu,ubuntu,ubuntu:x:1000:1001:Ubuntu:/home/ubuntu:/bin/bash,49
+gt-s03-system-info,4,real_ubuntu,real_ubuntu,ubuntu,12,3
+gt-s03-system-info,5,real_ubuntu,real_ubuntu,ubuntu,"total used free shared buff/cache available
+Mem: 3.5Gi 527Mi 2.6Gi 4.1Mi 533Mi 3.0Gi
+Swap: 1.0Gi 0B 1.0Gi",207
+gt-s03-system-info,6,real_ubuntu,real_ubuntu,ubuntu,"Filesystem Size Used Avail Use% Mounted on
+none 1.8G 0 1.8G 0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb 97M 97M 0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none 1.8G 4.0K 1.8G 1% /mnt/wsl
+drivers 476G 283G 193G 60% /usr/lib/wsl/drivers
+/dev/sdd 1007G 1.2G 955G 1% /
+none 1.8G 32K 1.8G 1% /mnt/wslg
+none 1.8G 0 1.8G 0% /usr/lib/wsl/lib
+rootfs 1.8G 3.4M 1.8G 1% /init
+none 1.8G 576K 1.8G 1% /run
+none 1.8G 0 1.8G 0% /run/lock
+none 1.8G 0 1.8G 0% /run/shm
+none 1.8G 68K 1.8G 1% /mnt/wslg/versions.txt
+none 1.8G 68K 1.8G 1% /mnt/wslg/doc
+C:\ 476G 283G 193G 60% /mnt/c
+tmpfs 360M 20K 360M 1% /run/user/1000",875
+gt-s03-system-info,7,real_ubuntu,real_ubuntu,ubuntu,"23:53:05 up 0 min, 1 user, load average: 0.86, 0.27, 0.09",61
+gt-s03-system-info,8,real_ubuntu,real_ubuntu,ubuntu,"Linux version 6.18.58.1-microsoft-standard-WSL2 (root@6869314ecc53) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026",167
+gt-s03-system-info,9,real_ubuntu,real_ubuntu,ubuntu,"processor : 0
+vendor_id : AuthenticAMD
+cpu family : 23
+model : 96
+model name : AMD Ryzen 5 4600H with Radeon Graphics",119
+gt-s03-system-info,10,real_ubuntu,real_ubuntu,ubuntu,43.26 486.59,13
+gt-s04-paths,1,real_ubuntu,real_ubuntu,ubuntu,/usr/bin/bash,14
+gt-s04-paths,2,real_ubuntu,real_ubuntu,ubuntu,/usr/bin/ls,12
+gt-s04-paths,3,real_ubuntu,real_ubuntu,ubuntu,pwd is a shell builtin,23
+gt-s04-paths,4,real_ubuntu,real_ubuntu,ubuntu,/usr/bin/python3,17
+gt-s04-paths,5,real_ubuntu,real_ubuntu,ubuntu,"NF
+X11
+[
+aa-enabled
+aa-exec
+aa-features-abi
+add-apt-repository
+addpart
+addr2line
+apport-bug",92
+gt-s04-paths,6,real_ubuntu,real_ubuntu,ubuntu,"NF
+X11
+[
+aa-enabled
+aa-exec
+aa-features-abi
+add-apt-repository
+addpart
+addr2line
+apport-bug",92
+gt-s04-paths,7,real_ubuntu,real_ubuntu,ubuntu,"snap-private-tmp
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-logind.service-baYlNk
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-resolved.service-ymsdsi
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-timedated.service-tQ1IB5
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-timesyncd.service-hSjq1W
+systemd-private-9132ced55d104cf293543e53377922ae-wsl-pro.service-dzZQDg",413
+gt-s04-paths,8,real_ubuntu,real_ubuntu,ubuntu,"backups
+cache
+crash
+lib
+local
+lock
+log
+mail
+opt
+run
+snap
+spool
+tmp",67
+gt-s04-paths,9,real_ubuntu,real_ubuntu,ubuntu,"PackageKit
+X11
+adduser.conf
+alternatives
+apparmor
+apparmor.d
+apport
+apt
+bash.bashrc
+bash_completion
+bash_completion.d
+bindresvport.blacklist
+binfmt.d
+byobu
+ca-certificates",172
+gt-s04-paths,10,real_ubuntu,real_ubuntu,ubuntu,/usr/bin/bash,14
+gt-s05-navigation,1,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s05-navigation,3,real_ubuntu,real_ubuntu,ubuntu,/tmp,5
+gt-s05-navigation,4,real_ubuntu,real_ubuntu,ubuntu,"snap-private-tmp
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-logind.service-baYlNk
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-resolved.service-ymsdsi
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-timedated.service-tQ1IB5
+systemd-private-9132ced55d104cf293543e53377922ae-systemd-timesyncd.service-hSjq1W
+systemd-private-9132ced55d104cf293543e53377922ae-wsl-pro.service-dzZQDg",413
+gt-s05-navigation,6,real_ubuntu,real_ubuntu,ubuntu,/home,6
+gt-s05-navigation,8,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s05-navigation,10,real_ubuntu,real_ubuntu,ubuntu,/,2
+gt-s06-tmp-lab,3,real_ubuntu,real_ubuntu,ubuntu,/tmp/gt_lab,12
+gt-s06-tmp-lab,5,real_ubuntu,real_ubuntu,ubuntu,"a.txt
+b.txt",12
+gt-s06-tmp-lab,7,real_ubuntu,real_ubuntu,ubuntu,hello,6
+gt-s06-tmp-lab,9,real_ubuntu,real_ubuntu,ubuntu,"a.txt
+b.txt
+c.txt",18
+gt-s07-processes,1,real_ubuntu,real_ubuntu,ubuntu,"PID TTY TIME CMD
+ 431 pts/0 00:00:00 python3
+ 498 pts/0 00:00:00 ps",93
+gt-s07-processes,2,real_ubuntu,real_ubuntu,ubuntu,"USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+root 1 15.0 0.3 21844 13196 ? Ss 23:52 0:00 /sbin/init
+root 2 0.1 0.0 3820 2524 hvc0 Sl+ 23:52 0:00 /init
+root 3 0.0 0.0 3680 2220 hvc0 S+ 23:52 0:00 init-watcher
+root 7 0.0 0.0 4244 2724 hvc0 Sl+ 23:52 0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root 61 4.1 0.4 42108 16196 ? Ss 23:53 0:00 /usr/lib/systemd/systemd-journald
+root 98 4.1 0.1 25064 6744 ? Ss 23:53 0:00 /usr/lib/systemd/systemd-udevd
+root 107 0.4 0.1 24540 4460 ? S 23:53 0:00 (udev-worker)
+root 108 0.6 0.1 24540 4912 ? S 23:53 0:00 (udev-worker)
+root 109 0.2 0.1 24540 4024 ? S 23:53 0:00 (udev-worker)",896
+gt-s07-processes,3,real_ubuntu,real_ubuntu,ubuntu,"398 -bash
+502 bash -c pgrep -a bash | head -n 5",48
+gt-s07-processes,4,real_ubuntu,real_ubuntu,ubuntu,505,4
+gt-s07-processes,5,real_ubuntu,real_ubuntu,ubuntu,"Name: head
+Umask: 0022
+State: R (running)
+Tgid: 506
+Ngid: 0",60
+gt-s07-processes,6,real_ubuntu,real_ubuntu,ubuntu,"1
+107
+108
+109
+110
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121",58
+gt-s07-processes,7,real_ubuntu,real_ubuntu,ubuntu,"top - 23:53:05 up 0 min, 1 user, load average: 0.86, 0.27, 0.09
+Tasks: 55 total, 1 running, 54 sleeping, 0 stopped, 0 zombie
+%Cpu(s): 0.0 us, 0.0 sy, 0.0 ni,100.0 id, 0.0 wa, 0.0 hi, 0.0 si, 0.0 st 
+MiB Mem : 3598.8 total, 2608.7 free, 530.9 used, 534.9 buff/cache 
+MiB Swap: 1024.0 total, 1024.0 free, 0.0 used. 3067.9 avail Mem 
+
+ PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND
+ 1 root 20 0 21844 13196 9784 S 0.0 0.4 0:00.90 systemd",532
+gt-s07-processes,8,real_ubuntu,real_ubuntu,ubuntu,"23:53:05 up 0 min, 1 user, load average: 0.86, 0.27, 0.09
+USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT
+ubuntu pts/1 - 23:53 2.00s 0.06s 0.04s -bash",199
+gt-s07-processes,9,real_ubuntu,real_ubuntu,ubuntu,ubuntu pts/1 2026-11-11 23:53,39
+gt-s07-processes,10,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s08-environment,1,real_ubuntu,real_ubuntu,ubuntu,"SHELL=/bin/bash
+WSL2_GUI_APPS_ENABLED=1
+WSL_DISTRO_NAME=Ubuntu-24.04
+NAME=LAPTOP-N1NKKV53
+PWD=/home/ubuntu
+LOGNAME=ubuntu
+_=/usr/bin/env
+HOME=/home/ubuntu
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/430_interop
+WAYLAND_DISPLAY=wayland-0
+TERM=xterm-256color
+USER=ubuntu
+DISPLAY=:0
+SHLVL=1
+XDG_RUNTIME_DIR=/run/user/1000
+WSLENV=
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/devyani patil/AppData/Local/Programs/cursor/resources/app/node_modules/@vscode/ripgrep/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Python312/Scripts/:/mnt/c/Program Files/Python312/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/Java/jdk-22.0.2/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/WSL/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/devyani patil/.conda/anakonda:/mnt/c/Users/devyani patil/.conda/anakonda/Library/mingw-w64/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Library/usr/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Library/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Scripts:/mnt/c/Users/devyani patil/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Users/devyani patil/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/devyani patil/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/devyani patil/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/devyani patil/AppData/Local/GitHubCopilotCLI/:/mnt/c/Users/devyani patil/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim:/mnt/c/Users/devyani patil/AppData/Local/Programs/Ollama
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+HOSTTYPE=x86_64",2461
+gt-s08-environment,2,real_ubuntu,real_ubuntu,ubuntu,/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/devyani patil/AppData/Local/Programs/cursor/resources/app/node_modules/@vscode/ripgrep/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Python312/Scripts/:/mnt/c/Program Files/Python312/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/Java/jdk-22.0.2/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/WSL/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/devyani patil/.conda/anakonda:/mnt/c/Users/devyani patil/.conda/anakonda/Library/mingw-w64/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Library/usr/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Library/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Scripts:/mnt/c/Users/devyani patil/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Users/devyani patil/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/devyani patil/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/devyani patil/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/devyani patil/AppData/Local/GitHubCopilotCLI/:/mnt/c/Users/devyani patil/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim:/mnt/c/Users/devyani patil/AppData/Local/Programs/Ollama,2069
+gt-s08-environment,3,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s08-environment,4,real_ubuntu,real_ubuntu,ubuntu,/bin/bash,10
+gt-s08-environment,5,real_ubuntu,real_ubuntu,ubuntu,"LANG=C.UTF-8
+LANGUAGE=
+LC_CTYPE=""C.UTF-8""
+LC_NUMERIC=""C.UTF-8""
+LC_TIME=""C.UTF-8""
+LC_COLLATE=""C.UTF-8""
+LC_MONETARY=""C.UTF-8""
+LC_MESSAGES=""C.UTF-8""
+LC_PAPER=""C.UTF-8""
+LC_NAME=""C.UTF-8""",183
+gt-s08-environment,6,real_ubuntu,real_ubuntu,ubuntu,/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/devyani patil/AppData/Local/Programs/cursor/resources/app/node_modules/@vscode/ripgrep/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Python312/Scripts/:/mnt/c/Program Files/Python312/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/Java/jdk-22.0.2/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/WSL/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/devyani patil/.conda/anakonda:/mnt/c/Users/devyani patil/.conda/anakonda/Library/mingw-w64/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Library/usr/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Library/bin:/mnt/c/Users/devyani patil/.conda/anakonda/Scripts:/mnt/c/Users/devyani patil/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Users/devyani patil/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/devyani patil/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/devyani patil/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/devyani patil/AppData/Local/GitHubCopilotCLI/:/mnt/c/Users/devyani patil/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim:/mnt/c/Users/devyani patil/AppData/Local/Programs/Ollama,2069
+gt-s08-environment,7,real_ubuntu,real_ubuntu,ubuntu,/bin/bash,10
+gt-s08-environment,8,real_ubuntu,real_ubuntu,ubuntu,0022,5
+gt-s08-environment,9,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s08-environment,10,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s09-local-net,1,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53,16
+gt-s09-local-net,2,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53.localdomain,28
+gt-s09-local-net,3,real_ubuntu,real_ubuntu,ubuntu,"# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
+# [network]
+# generateHosts = false
+127.0.0.1 localhost
+127.0.1.1 LAPTOP-N1NKKV53.localdomain LAPTOP-N1NKKV53
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters",427
+gt-s09-local-net,4,real_ubuntu,real_ubuntu,ubuntu,"# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
+# [network]
+# generateResolvConf = false
+nameserver 10.255.255.254",200
+gt-s09-local-net,5,real_ubuntu,real_ubuntu,ubuntu,"lo UNKNOWN 127.0.0.1/8 10.255.255.254/32 ::1/128 
+eth0 UP 172.27.113.10/20 fe80::215:5dff:fe52:128c/64",149
+gt-s09-local-net,6,real_ubuntu,real_ubuntu,ubuntu,"1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+ link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+ link/ether 00:15:5d:52:12:8c brd ff:ff:ff:ff:ff:ff",325
+gt-s09-local-net,7,real_ubuntu,real_ubuntu,ubuntu,"PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.177 ms
+
+--- 127.0.0.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.177/0.177/0.177/0.000 ms",251
+gt-s09-local-net,8,real_ubuntu,real_ubuntu,ubuntu,::1 localhost,26
+gt-s09-local-net,9,real_ubuntu,real_ubuntu,ubuntu,"State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+LISTEN 0 4096 127.0.0.53%lo:53 0.0.0.0:* 
+LISTEN 0 1000 10.255.255.254:53 0.0.0.0:* 
+LISTEN 0 4096 127.0.0.54:53 0.0.0.0:*",264
+gt-s09-local-net,10,real_ubuntu,real_ubuntu,ubuntu,"# /etc/nsswitch.conf
+#
+# Example configuration of GNU Name Service Switch functionality.
+# If you have the `glibc-doc-reference' and `info' packages installed, try:
+# `info libc ""Name Service Switch""' for information about this file.
+
+passwd: files systemd
+group: files systemd
+shadow: files systemd
+gshadow: files systemd
+
+hosts: files dns
+networks: files
+
+protocols: db files",430
+gt-s10-users,1,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s10-users,2,real_ubuntu,real_ubuntu,ubuntu,1000,5
+gt-s10-users,3,real_ubuntu,real_ubuntu,ubuntu,1001,5
+gt-s10-users,4,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s10-users,5,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s10-users,6,real_ubuntu,real_ubuntu,ubuntu,ubuntu adm cdrom sudo dip lxd,30
+gt-s10-users,7,real_ubuntu,real_ubuntu,ubuntu,ubuntu:x:1001:,15
+gt-s10-users,8,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s10-users,9,real_ubuntu,real_ubuntu,ubuntu,"total 32
+drwxr-x--- 5 ubuntu ubuntu 4096 Nov 11 23:53 .
+drwxr-xr-x 3 root root 4096 Nov 11 23:49 ..
+-rw-r--r-- 1 ubuntu ubuntu 220 Mar 31 2024 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu 3771 Mar 31 2024 .bashrc
+drwx------ 2 ubuntu ubuntu 4096 Nov 11 23:52 .cache
+drwx------ 3 ubuntu ubuntu 4096 Nov 11 23:53 .config
+-rw-rw-r-- 1 ubuntu ubuntu 0 Nov 11 23:52 .motd_shown
+-rw-r--r-- 1 ubuntu ubuntu 807 Mar 31 2024 .profile
+drwx------ 2 ubuntu ubuntu 4096 Nov 11 23:49 .ssh",481
+gt-s10-users,10,real_ubuntu,real_ubuntu,ubuntu,"root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,ubuntu",62
+gt-s11-text-utils,1,real_ubuntu,real_ubuntu,ubuntu,hello world,12
+gt-s11-text-utils,2,real_ubuntu,real_ubuntu,ubuntu,"a
+b",4
+gt-s11-text-utils,3,real_ubuntu,real_ubuntu,ubuntu,test,5
+gt-s11-text-utils,4,real_ubuntu,real_ubuntu,ubuntu,"1
+2
+3
+4
+5",10
+gt-s11-text-utils,5,real_ubuntu,real_ubuntu,ubuntu,1 /etc/hostname,16
+gt-s11-text-utils,6,real_ubuntu,real_ubuntu,ubuntu,"PRETTY_NAME=""Ubuntu 24.04 LTS""
+NAME=""Ubuntu""",45
+gt-s11-text-utils,7,real_ubuntu,real_ubuntu,ubuntu,"UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo",39
+gt-s11-text-utils,8,real_ubuntu,real_ubuntu,ubuntu,"a
+b",4
+gt-s11-text-utils,9,real_ubuntu,real_ubuntu,ubuntu,"a
+b",4
+gt-s11-text-utils,10,real_ubuntu,real_ubuntu,ubuntu,UBUNTU,7
+gt-s12-file-meta,2,real_ubuntu,real_ubuntu,ubuntu,-rw-r--r-- 1 ubuntu ubuntu 0 Nov 11 23:53 /tmp/gt_meta,55
+gt-s12-file-meta,3,real_ubuntu,real_ubuntu,ubuntu,"File: /tmp/gt_meta
+ Size: 0 Blocks: 0 IO Block: 4096 regular empty file
+Device: 8,48 Inode: 46273 Links: 1
+Access: (0644/-rw-r--r--) Uid: ( 1000/ ubuntu) Gid: ( 1001/ ubuntu)
+Access: 2026-11-11 23:53:05.784075261 +0800
+Modify: 2026-11-11 23:53:05.784075261 +0800
+Change: 2026-11-11 23:53:05.784075261 +0800
+ Birth: 2026-11-11 23:53:05.784075261 +0800",385
+gt-s12-file-meta,4,real_ubuntu,real_ubuntu,ubuntu,/tmp/gt_meta: empty,20
+gt-s12-file-meta,5,real_ubuntu,real_ubuntu,ubuntu,0 0 0 /tmp/gt_meta,19
+gt-s12-file-meta,7,real_ubuntu,real_ubuntu,ubuntu,-rw-r--r-- 1 ubuntu ubuntu 0 Nov 11 23:53 /tmp/gt_meta,55
+gt-s12-file-meta,9,real_ubuntu,real_ubuntu,ubuntu,drwxr-xr-x 2 ubuntu ubuntu 4096 Nov 11 23:53 /tmp/gt_dir,57
+gt-s13-shell-builtins,1,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s13-shell-builtins,2,real_ubuntu,real_ubuntu,ubuntu,test,5
+gt-s13-shell-builtins,3,real_ubuntu,real_ubuntu,ubuntu,ok,3
+gt-s13-shell-builtins,7,real_ubuntu,real_ubuntu,ubuntu,ls is /usr/bin/ls,18
+gt-s13-shell-builtins,8,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s13-shell-builtins,9,real_ubuntu,real_ubuntu,ubuntu,/usr/bin/ls,12
+gt-s13-shell-builtins,10,real_ubuntu,real_ubuntu,ubuntu,"GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally. Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.",329
+gt-s14-disk-memory,1,real_ubuntu,real_ubuntu,ubuntu,"Filesystem 1K-blocks Used Available Use% Mounted on
+none 1842572 0 1842572 0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb 99148 99148 0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none 1842572 4 1842568 1% /mnt/wsl
+drivers 498799612 296497196 202302416 60% /usr/lib/wsl/drivers
+/dev/sdd 1055762868 1197904 1000861492 1% /
+none 1842572 32 1842540 1% /mnt/wslg
+none 1842572 0 1842572 0% /usr/lib/wsl/lib
+rootfs 1837452 3412 1834040 1% /init
+none 1842572 576 1841996 1% /run
+none 1842572 0 1842572 0% /run/lock
+none 1842572 0 1842572 0% /run/shm
+none 1842572 68 1842504 1% /mnt/wslg/versions.txt
+none 1842572 68 1842504 1% /mnt/wslg/doc
+C:\ 498799612 296497196 202302416 60% /mnt/c
+tmpfs 368512 20 368492 1% /run/user/1000",1099
+gt-s14-disk-memory,2,real_ubuntu,real_ubuntu,ubuntu,"Filesystem Size Used Avail Use% Mounted on
+/dev/sdd 1007G 1.2G 955G 1% /",89
+gt-s14-disk-memory,3,real_ubuntu,real_ubuntu,ubuntu,32K /home/ubuntu,17
+gt-s14-disk-memory,4,real_ubuntu,real_ubuntu,ubuntu,28K /tmp,9
+gt-s14-disk-memory,5,real_ubuntu,real_ubuntu,ubuntu,"total used free shared buff/cache available
+Mem: 3685144 541520 2664128 4248 557052 3143624
+Swap: 1048576 0 1048576",207
+gt-s14-disk-memory,6,real_ubuntu,real_ubuntu,ubuntu,"total used free shared buff/cache available
+Mem: 3598 528 2601 4 544 3069
+Swap: 1024 0 1024",207
+gt-s14-disk-memory,7,real_ubuntu,real_ubuntu,ubuntu,"none on /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2 type overlay (rw,nosuid,nodev,noatime,lowerdir=/modules/6.18.58.1-microsoft-standard-WSL2/modules,upperdir=/lib/modules/6.18.58.1-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.58.1-microsoft-standard-WSL2/rw/work,uuid=on)
+/dev/sdb on /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2 type ext4 (ro,relatime)
+none on /mnt/wsl type tmpfs (rw,relatime)
+drivers on /usr/lib/wsl/drivers type 9p (ro,nosuid,nodev,noatime,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8)
+/dev/sdd on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
+none on /mnt/wslg type tmpfs (rw,relatime)
+/dev/sdd on /mnt/wslg/distro type ext4 (ro,relatime,discard,errors=remount-ro,data=ordered)
+none on /usr/lib/wsl/lib type overlay (rw,nosuid,nodev,noatime,lowerdir=/gpu_lib_packaged:/gpu_lib_inbox,upperdir=/gpu_lib/rw/upper,workdir=/gpu_lib/rw/work,uuid=on)",964
+gt-s14-disk-memory,8,real_ubuntu,real_ubuntu,ubuntu,"TARGET SOURCE FSTYPE OPTIONS
+/ /dev/sdd ext4 rw,relatime,discard,errors=remount-ro,data=ordered
+├─/usr/lib/modules/6.18.58.1-microsoft-standard-WSL2 none overlay rw,nosuid,nodev,noatime,lowerdir=/modules/6.18.58.1-microsoft-standard-WSL2/modules,upperdir=/lib/modules/6.18.58.1-microsoft-standard-WSL2/rw/upper,workdir=/lib/modules/6.18.58.1-microsoft-standard-WSL2/rw/work,uuid=on
+├─/usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2 /dev/sdb[/6.18.58.1-microsoft-standard-WSL2/linux-headers] ext4 ro,relatime
+├─/mnt/wsl none tmpfs rw,relatime
+├─/usr/lib/wsl/drivers drivers 9p ro,nosuid,nodev,noatime,aname=drivers;fmask=222;dmask=222,cache=0x5,access=client,msize=65536,trans=fd,rfd=8,wfd=8
+├─/mnt/wslg none tmpfs rw,relatime
+│ ├─/mnt/wslg/distro /dev/sdd ext4 ro,relatime,discard,errors=remount-ro,data=ordered",1521
+gt-s14-disk-memory,10,real_ubuntu,real_ubuntu,ubuntu,"Filesystem Size Used Avail Use% Mounted on
+none 1.8G 0 1.8G 0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb 97M 97M 0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none 1.8G 4.0K 1.8G 1% /mnt/wsl
+drivers 476G 283G 193G 60% /usr/lib/wsl/drivers",339
+gt-s15-time,1,real_ubuntu,real_ubuntu,ubuntu,Wed Nov 11 23:53:05 +08 2026,29
+gt-s15-time,2,real_ubuntu,real_ubuntu,ubuntu,Wed Nov 11 15:53:05 UTC 2026,29
+gt-s15-time,3,real_ubuntu,real_ubuntu,ubuntu,2026-11-11,11
+gt-s15-time,4,real_ubuntu,real_ubuntu,ubuntu,1794412385,11
+gt-s15-time,8,real_ubuntu,real_ubuntu,ubuntu,"File: /tmp/gt_t
+ Size: 0 Blocks: 0 IO Block: 4096 regular empty file
+Device: 8,48 Inode: 46273 Links: 1
+Access: (0644/-rw-r--r--) Uid: ( 1000/ ubuntu) Gid: ( 1001/ ubuntu)
+Access: 2026-11-11 23:53:06.105404602 +0800
+Modify: 2026-11-11 23:53:06.105404602 +0800
+Change: 2026-11-11 23:53:06.105404602 +0800
+ Birth: 2026-11-11 23:53:06.105404602 +0800",382
+gt-s15-time,10,real_ubuntu,real_ubuntu,ubuntu,2026-11-11 23:53:06,20
+gt-s16-search-list,1,real_ubuntu,real_ubuntu,ubuntu,"/etc/adduser.conf
+/etc/ca-certificates.conf
+/etc/debconf.conf
+/etc/deluser.conf
+/etc/dhcpcd.conf
+/etc/e2scrub.conf
+/etc/fuse.conf
+/etc/gai.conf
+/etc/host.conf
+/etc/ld.so.conf
+/etc/libaudit.conf
+/etc/locale.conf
+/etc/logrotate.conf
+/etc/mke2fs.conf
+/etc/nsswitch.conf",267
+gt-s16-search-list,2,real_ubuntu,real_ubuntu,ubuntu,"/tmp
+/tmp/snap-private-tmp
+/tmp/systemd-private-9132ced55d104cf293543e53377922ae-wsl-pro.service-dzZQDg
+/tmp/.X11-unix
+/tmp/systemd-private-9132ced55d104cf293543e53377922ae-systemd-logind.service-baYlNk
+/tmp/systemd-private-9132ced55d104cf293543e53377922ae-systemd-timesyncd.service-hSjq1W
+/tmp/systemd-private-9132ced55d104cf293543e53377922ae-systemd-resolved.service-ymsdsi
+/tmp/systemd-private-9132ced55d104cf293543e53377922ae-systemd-timedated.service-tQ1IB5",463
+gt-s16-search-list,3,real_ubuntu,real_ubuntu,ubuntu,"/home/ubuntu
+/home/ubuntu/.bash_logout
+/home/ubuntu/.config
+/home/ubuntu/.cache
+/home/ubuntu/.profile
+/home/ubuntu/.motd_shown
+/home/ubuntu/.bashrc
+/home/ubuntu/.ssh",166
+gt-s16-search-list,4,real_ubuntu,real_ubuntu,ubuntu,"bin
+games
+include
+lib
+lib64
+libexec
+local
+sbin
+share
+src",57
+gt-s16-search-list,5,real_ubuntu,real_ubuntu,ubuntu,"X11
+apparmor
+apt
+binfmt.d
+byobu
+cloud-init
+cnf-update-db
+command-not-found
+compat-ld
+console-setup",99
+gt-s16-search-list,6,real_ubuntu,real_ubuntu,ubuntu,notes,6
+gt-s16-search-list,7,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s16-search-list,8,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s16-search-list,9,real_ubuntu,real_ubuntu,ubuntu,/tmp,5
+gt-s16-search-list,10,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s17-lab-home,3,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu/lab1,18
+gt-s17-lab-home,5,real_ubuntu,real_ubuntu,ubuntu,"f1
+f2
+sub",10
+gt-s17-lab-home,7,real_ubuntu,real_ubuntu,ubuntu,x,2
+gt-s17-lab-home,9,real_ubuntu,real_ubuntu,ubuntu,"f1b
+f2
+sub",11
+gt-s18-lab-tree,4,real_ubuntu,real_ubuntu,ubuntu,/tmp/gt_tree,13
+gt-s18-lab-tree,6,real_ubuntu,real_ubuntu,ubuntu,".
+./a
+./a/b
+./a/b/c.txt",24
+gt-s18-lab-tree,9,real_ubuntu,real_ubuntu,ubuntu,/,2
+gt-s19-kernel-readonly,1,real_ubuntu,real_ubuntu,ubuntu,x86_64,7
+gt-s19-kernel-readonly,2,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53,16
+gt-s19-kernel-readonly,3,real_ubuntu,real_ubuntu,ubuntu,Linux,6
+gt-s19-kernel-readonly,4,real_ubuntu,real_ubuntu,ubuntu,#1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026,52
+gt-s19-kernel-readonly,5,real_ubuntu,real_ubuntu,ubuntu,"MemTotal: 3685144 kB
+MemFree: 2667180 kB
+MemAvailable: 3147256 kB
+Buffers: 49252 kB
+Cached: 485840 kB",140
+gt-s19-kernel-readonly,6,real_ubuntu,real_ubuntu,ubuntu,0.86 0.27 0.09 1/301 664,25
+gt-s19-kernel-readonly,7,real_ubuntu,real_ubuntu,ubuntu,44.21 497.18,13
+gt-s19-kernel-readonly,8,real_ubuntu,real_ubuntu,ubuntu,"eth0
+lo",8
+gt-s19-kernel-readonly,9,real_ubuntu,real_ubuntu,ubuntu,unknown,8
+gt-s19-kernel-readonly,10,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53,16
+gt-s20-wrapup,1,real_ubuntu,real_ubuntu,ubuntu,ubuntu,7
+gt-s20-wrapup,2,real_ubuntu,real_ubuntu,ubuntu,/home/ubuntu,13
+gt-s20-wrapup,3,real_ubuntu,real_ubuntu,ubuntu,LAPTOP-N1NKKV53,16
+gt-s20-wrapup,4,real_ubuntu,real_ubuntu,ubuntu,Linux LAPTOP-N1NKKV53 6.18.58.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux,139
+gt-s20-wrapup,5,real_ubuntu,real_ubuntu,ubuntu,lab1,5
+gt-s20-wrapup,6,real_ubuntu,real_ubuntu,ubuntu,"Filesystem Size Used Avail Use% Mounted on
+none 1.8G 0 1.8G 0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb 97M 97M 0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none 1.8G 4.0K 1.8G 1% /mnt/wsl
+drivers 476G 283G 193G 60% /usr/lib/wsl/drivers",339
+gt-s20-wrapup,7,real_ubuntu,real_ubuntu,ubuntu,"total used free shared buff/cache available
+Mem: 3.5Gi 525Mi 2.5Gi 4.1Mi 544Mi 3.0Gi
+Swap: 1.0Gi 0B 1.0Gi",207
+gt-s20-wrapup,8,real_ubuntu,real_ubuntu,ubuntu,Wed Nov 11 23:53:06 +08 2026,29
+gt-s20-wrapup,9,real_ubuntu,real_ubuntu,ubuntu,"uid=1000(ubuntu) gid=1001(ubuntu) groups=1001(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),1000(lxd)",98
+gt-s20-wrapup,10,real_ubuntu,real_ubuntu,ubuntu,done,5
+gt-s01-identity,1,cowrie,honeypot,cowrie,"whoami
+labuser",41
+gt-s01-identity,2,cowrie,honeypot,cowrie,"id
+uid=5212(labuser) gid=5212(labuser) groups=5212(labuser)",86
+gt-s01-identity,3,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s01-identity,4,cowrie,honeypot,cowrie,"hostname
+svr04",41
+gt-s01-identity,5,cowrie,honeypot,cowrie,"uname -a
+Linux svr04 6.1.0-21-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.90-1 (2024-05-03) x86_64 GNU/Linux",131
+gt-s01-identity,6,cowrie,honeypot,cowrie,"uname -r
+6.1.0-21-amd64",50
+gt-s01-identity,7,cowrie,honeypot,cowrie,groups,34
+gt-s01-identity,8,cowrie,honeypot,cowrie,"echo $HOME
+/home/labuser",51
+gt-s01-identity,9,cowrie,honeypot,cowrie,"echo $USER
+labuser",45
+gt-s01-identity,10,cowrie,honeypot,cowrie,"date
+Thu Nov 12 14:11:28 UTC 2026",60
+gt-s02-home-files,1,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s02-home-files,3,cowrie,honeypot,cowrie,"ls -la
+drwxr-xr-x 1 5212 5212 4096 2026-11-12 22:11 .
+drwxr-xr-x 1 root root 4096 2024-01-29 05:20 ..",129
+gt-s02-home-files,4,cowrie,honeypot,cowrie,"ls -a
+. ..",39
+gt-s02-home-files,6,cowrie,honeypot,cowrie,"ls
+notes.txt",40
+gt-s02-home-files,9,cowrie,honeypot,cowrie,"cat notes.txt
+hello",46
+gt-s03-system-info,1,cowrie,honeypot,cowrie,cat /etc/os-release,45
+gt-s03-system-info,2,cowrie,honeypot,cowrie,"cat /etc/hostname
+svr04",50
+gt-s03-system-info,3,cowrie,honeypot,cowrie,"getent passwd ubuntu
+-bash: /usr/bin/getent: cannot execute binary file: Exec format error",117
+gt-s03-system-info,4,cowrie,honeypot,cowrie,"nproc
+2",34
+gt-s03-system-info,5,cowrie,honeypot,cowrie,"free -h
+ total used free shared buff/cache available
+Mem: 3G 472M 2G 4M 294M 3G
+Swap: 1G 0B 1G",240
+gt-s03-system-info,6,cowrie,honeypot,cowrie,"df -h
+-bash: /usr/bin/df: cannot execute binary file: Exec format error",98
+gt-s03-system-info,7,cowrie,honeypot,cowrie,"uptime
+22:11:32 up 57 days, 5:37, 1 user, load average: 0.00, 0.00, 0.00",103
+gt-s03-system-info,8,cowrie,honeypot,cowrie,"cat /proc/version
+Linux version 6.1.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.90-1 (2024-05-03)",232
+gt-s03-system-info,9,cowrie,honeypot,cowrie,"head -n 5 /proc/cpuinfo
+processor : 0
+vendor_id : GenuineIntel
+cpu family : 6
+model : 79
+model name : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz",175
+gt-s03-system-info,10,cowrie,honeypot,cowrie,"cat /proc/uptime
+4945070.09 9593435.97",65
+gt-s04-paths,1,cowrie,honeypot,cowrie,"which bash
+/usr/bin/bash
+/bin/bash",62
+gt-s04-paths,2,cowrie,honeypot,cowrie,"which ls
+/usr/bin/ls
+/bin/ls",56
+gt-s04-paths,3,cowrie,honeypot,cowrie,"type pwd
+-bash: type: command not found",58
+gt-s04-paths,4,cowrie,honeypot,cowrie,"command -v python3
+-bash: command: command not found",71
+gt-s04-paths,5,cowrie,honeypot,cowrie,"ls /bin | head -n 10
+[ addpart apt apt-cache apt-cdrom 
+apt-config apt-get apt-key apt-mark arch 
+awk b2sum base32 base64 basename 
+basenc bash bashbug captoinfo cat 
+chage chattr chcon chfn chgrp 
+chmod choom chown chrt chsh 
+cksum clear clear_console cmp comm 
+cp csplit curl cut dash 
+date dd deb-systemd-helper deb-systemd-invoke debconf 
+debconf-apt-progress debconf-communicate debconf-copydb debconf-escape debconf-set-selections",1266
+gt-s04-paths,6,cowrie,honeypot,cowrie,"ls /usr/bin | head -n 10
+[ addpart apt apt-cache apt-cdrom 
+apt-config apt-get apt-key apt-mark arch 
+awk b2sum base32 base64 basename 
+basenc bash bashbug captoinfo cat 
+chage chattr chcon chfn chgrp 
+chmod choom chown chrt chsh 
+cksum clear clear_console cmp comm 
+cp csplit curl cut dash 
+date dd deb-systemd-helper deb-systemd-invoke debconf 
+debconf-apt-progress debconf-communicate debconf-copydb debconf-escape debconf-set-selections",1270
+gt-s04-paths,7,cowrie,honeypot,cowrie,ls /tmp,33
+gt-s04-paths,8,cowrie,honeypot,cowrie,"ls /var
+backups cache lib local lock log mail opt run spool tmp",123
+gt-s04-paths,9,cowrie,honeypot,cowrie,"ls /etc | head -n 15
+adduser.conf alternatives apt bash.bashrc bindresvport.blacklist 
+cron.d cron.daily debconf.conf debian_version default 
+deluser.conf dpkg e2scrub.conf environment fstab 
+gai.conf group group- gshadow gshadow- 
+gss host.conf hostname hosts hosts.allow 
+hosts.deny init.d inputrc issue issue.net 
+kernel ld.so.cache ld.so.conf ld.so.conf.d libaudit.conf 
+localtime login.defs logrotate.d mime.types mke2fs.conf 
+motd mtab netconfig nsswitch.conf opt 
+os-release pam.conf pam.d passwd passwd- 
+profile profile.d python3 python3.11 rc0.d 
+rc1.d rc2.d rc3.d rc4.d rc5.d 
+rc6.d rcS.d resolv.conf rmt runit 
+security selinux shadow shadow- shells 
+skel ssh subgid subuid sv",1801
+gt-s04-paths,10,cowrie,honeypot,cowrie,"readlink -f /bin/bash
+-bash: /usr/bin/readlink: cannot execute binary file: Exec format error",120
+gt-s05-navigation,1,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s05-navigation,3,cowrie,honeypot,cowrie,"pwd
+/tmp",38
+gt-s05-navigation,4,cowrie,honeypot,cowrie,ls,31
+gt-s05-navigation,6,cowrie,honeypot,cowrie,"pwd
+/home",40
+gt-s05-navigation,8,cowrie,honeypot,cowrie,"pwd
+/home",40
+gt-s05-navigation,10,cowrie,honeypot,cowrie,"pwd
+/",32
+gt-s06-tmp-lab,3,cowrie,honeypot,cowrie,"pwd
+/tmp/gt_lab",52
+gt-s06-tmp-lab,5,cowrie,honeypot,cowrie,"ls
+a.txt b.txt",52
+gt-s06-tmp-lab,7,cowrie,honeypot,cowrie,"cat a.txt
+hello",52
+gt-s06-tmp-lab,9,cowrie,honeypot,cowrie,"ls
+a.txt b.txt c.txt",58
+gt-s07-processes,1,cowrie,honeypot,cowrie,"ps
+PID TTY TIME COMMAND 
+6369 pts/0 0:00 -bash 
+6371 pts/0 0:00 ps",180
+gt-s07-processes,2,cowrie,honeypot,cowrie,"ps aux | head -n 10
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND 
+root 1 0.0 0.89 180281344 4587520 ? Ss Jul22 0.48 /lib/systemd/systemd --system --d
+root 2 0.0 0.0 0 0 ? S< Jul22 0.0 [kthreadd] 
+root 3 0.0 0.0 0 0 ? S< Jul22 0.0 [ksoftirqd/0] 
+root 5 0.0 0.0 0 0 ? D< Jul22 0.0 [kworker/0:0H] 
+root 7 0.0 0.0 0 0 ? Ss Jul22 0.0 [rcu_sched] 
+root 8 0.0 0.0 0 0 ? Ss+ Jul22 0.0 [rcu_bh] 
+root 9 0.0 0.0 0 0 ? Ss+ Jul22 0.0 [migration/0] 
+root 10 0.0 0.0 0 0 ? S< Jul22 0.0 [watchdog/0] 
+root 11 0.0 0.0 0 0 ? D< Jul22 0.0 [watchdog/1]",1220
+gt-s07-processes,3,cowrie,honeypot,cowrie,"pgrep -a bash | head -n 5
+-bash: /usr/bin/pgrep: cannot execute binary file: Exec format error",121
+gt-s07-processes,4,cowrie,honeypot,cowrie,"echo $$
+27839",40
+gt-s07-processes,5,cowrie,honeypot,cowrie,head -n 5 /proc/self/status,53
+gt-s07-processes,6,cowrie,honeypot,cowrie,"ls /proc | head -n 15
+1 969 acpi buddyinfo bus cgroups cmdline config.gz 
+consoles cpuinfo crypto devices diskstats dma docker driver 
+execdomains filesystems fs interrupts iomem ioports irq kallsyms 
+kcore key-users keys kmsg kpagecgroup kpagecount kpageflags loadavg 
+locks meminfo misc modules mounts mtrr net pagetypeinfo 
+partitions pressure self slabinfo softirqs stat swaps sys 
+sysrq-trigger sysvipc thread-self timer_list tty uptime version vmallocinfo 
+vmstat zoneinfo",875
+gt-s07-processes,7,cowrie,honeypot,cowrie,"top -bn1 | head -n 8
+E82: Cannot allocate any buffer, exiting...",91
+gt-s07-processes,8,cowrie,honeypot,cowrie,"w
+ 22:11:43 up 57 days, 5:37, 1 user, load average: 0.00, 0.00, 0.00
+USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT
+labuser pts/0 127.0.0.1 22:11 0.00s 0.00s 0.00s w",236
+gt-s07-processes,9,cowrie,honeypot,cowrie,"who
+labuser pts/0 2026-11-12 22:11 (127.0.0.1)",81
+gt-s07-processes,10,cowrie,honeypot,cowrie,"users
+labuser",40
+gt-s08-environment,1,cowrie,honeypot,cowrie,"env | head -n 20
+HOME=/home/labuser
+LOGNAME=labuser
+SHELL=/bin/bash
+SHLVL=1
+TMOUT=1800
+UID=5212
+USER=labuser
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+TERM=vt100",216
+gt-s08-environment,2,cowrie,honeypot,cowrie,"printenv PATH
+-bash: /usr/bin/printenv: cannot execute binary file: Exec format error",112
+gt-s08-environment,3,cowrie,honeypot,cowrie,"printenv HOME
+-bash: /usr/bin/printenv: cannot execute binary file: Exec format error",112
+gt-s08-environment,4,cowrie,honeypot,cowrie,"printenv SHELL
+-bash: /usr/bin/printenv: cannot execute binary file: Exec format error",113
+gt-s08-environment,5,cowrie,honeypot,cowrie,"locale | head -n 10
+-bash: /usr/bin/locale: cannot execute binary file: Exec format error",116
+gt-s08-environment,6,cowrie,honeypot,cowrie,"echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games",94
+gt-s08-environment,7,cowrie,honeypot,cowrie,"echo $SHELL
+/bin/bash",48
+gt-s08-environment,8,cowrie,honeypot,cowrie,umask,31
+gt-s08-environment,9,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s08-environment,10,cowrie,honeypot,cowrie,echo $PWD,37
+gt-s09-local-net,1,cowrie,honeypot,cowrie,"hostname -s
+hostname: you must be root to change the host name",89
+gt-s09-local-net,2,cowrie,honeypot,cowrie,"hostname -f
+hostname: you must be root to change the host name",89
+gt-s09-local-net,3,cowrie,honeypot,cowrie,"cat /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 nas3
+
+# The following lines are desirable for IPv6 capable hosts
+::1 localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters",231
+gt-s09-local-net,4,cowrie,honeypot,cowrie,"cat /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4",86
+gt-s09-local-net,5,cowrie,honeypot,cowrie,"ip -br addr
+-bash: ip: command not found",59
+gt-s09-local-net,6,cowrie,honeypot,cowrie,"ip link | head -n 20
+-bash: ip: command not found",72
+gt-s09-local-net,7,cowrie,honeypot,cowrie,"ping -c 1 127.0.0.1
+ping: bad number of packets to transmit.",87
+gt-s09-local-net,8,cowrie,honeypot,cowrie,"getent hosts localhost
+-bash: /usr/bin/getent: cannot execute binary file: Exec format error",119
+gt-s09-local-net,9,cowrie,honeypot,cowrie,"ss -lnt | head -n 15
+-bash: ss: command not found",72
+gt-s09-local-net,10,cowrie,honeypot,cowrie,cat /etc/nsswitch.conf | head -n 15,61
+gt-s10-users,1,cowrie,honeypot,cowrie,"whoami
+labuser",41
+gt-s10-users,2,cowrie,honeypot,cowrie,"id -u
+uid=5212(labuser) gid=5212(labuser) groups=5212(labuser)",89
+gt-s10-users,3,cowrie,honeypot,cowrie,"id -g
+uid=5212(labuser) gid=5212(labuser) groups=5212(labuser)",89
+gt-s10-users,4,cowrie,honeypot,cowrie,"id -un
+uid=5212(labuser) gid=5212(labuser) groups=5212(labuser)",90
+gt-s10-users,5,cowrie,honeypot,cowrie,"id -gn
+uid=5212(labuser) gid=5212(labuser) groups=5212(labuser)",90
+gt-s10-users,6,cowrie,honeypot,cowrie,groups,34
+gt-s10-users,7,cowrie,honeypot,cowrie,"getent group ubuntu
+-bash: /usr/bin/getent: cannot execute binary file: Exec format error",116
+gt-s10-users,8,cowrie,honeypot,cowrie,"ls /home
+labuser phil",52
+gt-s10-users,9,cowrie,honeypot,cowrie,"ls -la /home/ubuntu
+ls: cannot access '/home/ubuntu': No such file or directory",106
+gt-s10-users,10,cowrie,honeypot,cowrie,"head -n 5 /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:",100
+gt-s11-text-utils,1,cowrie,honeypot,cowrie,"echo hello world
+hello world",55
+gt-s11-text-utils,2,cowrie,honeypot,cowrie,"printf 'a\nb\n'
+a
+b",47
+gt-s11-text-utils,3,cowrie,honeypot,cowrie,"echo -n test; echo
+test",58
+gt-s11-text-utils,4,cowrie,honeypot,cowrie,"seq 1 5
+-bash: /usr/bin/seq: cannot execute binary file: Exec format error",101
+gt-s11-text-utils,5,cowrie,honeypot,cowrie,wc -l /etc/hostname,45
+gt-s11-text-utils,6,cowrie,honeypot,cowrie,head -n 2 /etc/os-release,51
+gt-s11-text-utils,7,cowrie,honeypot,cowrie,tail -n 2 /etc/os-release,51
+gt-s11-text-utils,8,cowrie,honeypot,cowrie,"printf 'b\na\n' | sort
+-bash: /usr/bin/sort: cannot execute binary file: Exec format error",117
+gt-s11-text-utils,9,cowrie,honeypot,cowrie,"printf 'a\na\nb\n' | uniq
+a
+b",57
+gt-s11-text-utils,10,cowrie,honeypot,cowrie,"tr a-z A-Z <<< 'ubuntu'
+UBUNTU",57
+gt-s12-file-meta,2,cowrie,honeypot,cowrie,"ls -l /tmp/gt_meta
+-rw-r--r-- 1 5212 5212 0 2026-11-12 22:11 /tmp/gt_meta",100
+gt-s12-file-meta,3,cowrie,honeypot,cowrie,"stat /tmp/gt_meta
+-bash: /usr/bin/stat: cannot execute binary file: Exec format error",112
+gt-s12-file-meta,4,cowrie,honeypot,cowrie,"file /tmp/gt_meta
+-bash: file: command not found",67
+gt-s12-file-meta,5,cowrie,honeypot,cowrie,wc /tmp/gt_meta,41
+gt-s12-file-meta,7,cowrie,honeypot,cowrie,"ls -l /tmp/gt_meta
+-rw-r--r-- 1 5212 5212 0 2026-11-12 22:11 /tmp/gt_meta",100
+gt-s12-file-meta,9,cowrie,honeypot,cowrie,"ls -ld /tmp/gt_dir
+drwxr-xr-x 1 5212 5212 4096 2026-11-12 22:11 /tmp/gt_dir",102
+gt-s13-shell-builtins,1,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s13-shell-builtins,2,cowrie,honeypot,cowrie,"echo test
+test",41
+gt-s13-shell-builtins,3,cowrie,honeypot,cowrie,"printf '%s\n' ok
+ok",46
+gt-s13-shell-builtins,7,cowrie,honeypot,cowrie,"type ls
+-bash: type: command not found",57
+gt-s13-shell-builtins,8,cowrie,honeypot,cowrie,"builtin pwd
+-bash: builtin: command not found",64
+gt-s13-shell-builtins,9,cowrie,honeypot,cowrie,"command -v ls
+-bash: command: command not found",66
+gt-s13-shell-builtins,10,cowrie,honeypot,cowrie,"help | head -n 5
+GNU bash, version 4.2.37(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally. Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.",376
+gt-s14-disk-memory,1,cowrie,honeypot,cowrie,"df
+-bash: /usr/bin/df: cannot execute binary file: Exec format error",95
+gt-s14-disk-memory,2,cowrie,honeypot,cowrie,"df -h /
+-bash: /usr/bin/df: cannot execute binary file: Exec format error",100
+gt-s14-disk-memory,3,cowrie,honeypot,cowrie,"du -sh /home/ubuntu
+28K .",56
+gt-s14-disk-memory,4,cowrie,honeypot,cowrie,"du -sh /tmp
+28K .",48
+gt-s14-disk-memory,5,cowrie,honeypot,cowrie,"free
+ total used free shared buff/cache available
+Mem: 3685144 499652 2890756 4216 294736 3131360
+Swap: 1048576 0 1048576",237
+gt-s14-disk-memory,6,cowrie,honeypot,cowrie,"free -m
+ total used free shared buff/cache available
+Mem: 3685 499 2890 4 294 3131
+Swap: 1048 0 1048",240
+gt-s14-disk-memory,7,cowrie,honeypot,cowrie,"mount | head -n 8
+-bash: /usr/bin/mount: cannot execute binary file: Exec format error",113
+gt-s14-disk-memory,8,cowrie,honeypot,cowrie,"findmnt | head -n 8
+-bash: /usr/bin/findmnt: cannot execute binary file: Exec format error",117
+gt-s14-disk-memory,10,cowrie,honeypot,cowrie,"df -h | head -n 5
+-bash: /usr/bin/df: cannot execute binary file: Exec format error",110
+gt-s15-time,1,cowrie,honeypot,cowrie,"date
+Thu Nov 12 14:12:01 UTC 2026",60
+gt-s15-time,2,cowrie,honeypot,cowrie,"date -u
+Thu Nov 12 14:12:02 UTC 2026",63
+gt-s15-time,3,cowrie,honeypot,cowrie,"date +%Y-%m-%d
+Thu Nov 12 14:12:02 UTC 2026",70
+gt-s15-time,4,cowrie,honeypot,cowrie,"date +%s
+Thu Nov 12 14:12:02 UTC 2026",64
+gt-s15-time,8,cowrie,honeypot,cowrie,"stat /tmp/gt_t | head -n 8
+-bash: /usr/bin/stat: cannot execute binary file: Exec format error",121
+gt-s15-time,10,cowrie,honeypot,cowrie,"date '+%Y-%m-%d %H:%M:%S'
+Thu Nov 12 14:12:03 UTC 2026",81
+gt-s16-search-list,1,cowrie,honeypot,cowrie,ls /etc/*.conf 2>/dev/null | head -n 15,65
+gt-s16-search-list,2,cowrie,honeypot,cowrie,"find /tmp -maxdepth 1 | head -n 15
+/tmp",66
+gt-s16-search-list,3,cowrie,honeypot,cowrie,find /home/ubuntu -maxdepth 1,55
+gt-s16-search-list,4,cowrie,honeypot,cowrie,"ls -1 /usr | head -n 15
+bin games include lib lib64 libexec local sbin share src",131
+gt-s16-search-list,5,cowrie,honeypot,cowrie,"ls /lib | head -n 10
+apt binfmt.d dpkg init locale lsb mime 
+openssh os-release python3 python3.11 runit-helper sasl2 sftp-server 
+sysctl.d systemd terminfo tmpfiles.d udev valgrind x86_64-linux-gnu",409
+gt-s16-search-list,6,cowrie,honeypot,cowrie,"basename /home/ubuntu/notes
+-bash: /usr/bin/basename: cannot execute binary file: Exec format error",126
+gt-s16-search-list,7,cowrie,honeypot,cowrie,"dirname /home/ubuntu/notes
+-bash: /usr/bin/dirname: cannot execute binary file: Exec format error",124
+gt-s16-search-list,8,cowrie,honeypot,cowrie,"realpath .
+-bash: /usr/bin/realpath: cannot execute binary file: Exec format error",109
+gt-s16-search-list,9,cowrie,honeypot,cowrie,"realpath /tmp
+-bash: /usr/bin/realpath: cannot execute binary file: Exec format error",112
+gt-s16-search-list,10,cowrie,honeypot,cowrie,"readlink /proc/self/cwd
+-bash: /usr/bin/readlink: cannot execute binary file: Exec format error",122
+gt-s17-lab-home,3,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s17-lab-home,5,cowrie,honeypot,cowrie,"ls
+-p f1 f2",39
+gt-s17-lab-home,7,cowrie,honeypot,cowrie,"cat f1
+x",35
+gt-s17-lab-home,9,cowrie,honeypot,cowrie,"ls
+-p f1b f2",42
+gt-s18-lab-tree,4,cowrie,honeypot,cowrie,"pwd
+/tmp",38
+gt-s18-lab-tree,6,cowrie,honeypot,cowrie,"find .
+/tmp
+/tmp/-p",50
+gt-s18-lab-tree,9,cowrie,honeypot,cowrie,"pwd
+/",32
+gt-s19-kernel-readonly,1,cowrie,honeypot,cowrie,"uname -m
+x86_64",42
+gt-s19-kernel-readonly,2,cowrie,honeypot,cowrie,"uname -n
+svr04",41
+gt-s19-kernel-readonly,3,cowrie,honeypot,cowrie,"uname -s
+Linux",41
+gt-s19-kernel-readonly,4,cowrie,honeypot,cowrie,"uname -v
+#1 SMP PREEMPT_DYNAMIC Debian 6.1.90-1 (2024-05-03)",87
+gt-s19-kernel-readonly,5,cowrie,honeypot,cowrie,"head -n 5 /proc/meminfo
+MemTotal: 4054744 kB
+MemFree: 997740 kB
+Buffers: 40276 kB
+Cached: 1801864 kB
+SwapCached: 17656 kB",194
+gt-s19-kernel-readonly,6,cowrie,honeypot,cowrie,cat /proc/loadavg,43
+gt-s19-kernel-readonly,7,cowrie,honeypot,cowrie,"cat /proc/uptime
+4945109.96 9593513.31",65
+gt-s19-kernel-readonly,8,cowrie,honeypot,cowrie,"ls /sys/class/net
+bonding_masters erspan0 eth0 gre0 gretap0 ip6_vti0 ip6gre0 
+ip6tnl0 ip_vti0 lo sit0 tunl0",239
+gt-s19-kernel-readonly,9,cowrie,honeypot,cowrie,cat /sys/class/net/lo/operstate,57
+gt-s19-kernel-readonly,10,cowrie,honeypot,cowrie,"cat /proc/sys/kernel/hostname
+cat: /proc/sys/kernel/hostname: No such file or directory",114
+gt-s20-wrapup,1,cowrie,honeypot,cowrie,"whoami
+labuser",41
+gt-s20-wrapup,2,cowrie,honeypot,cowrie,"pwd
+/home/labuser",44
+gt-s20-wrapup,3,cowrie,honeypot,cowrie,"hostname
+svr04",41
+gt-s20-wrapup,4,cowrie,honeypot,cowrie,"uname -a
+Linux svr04 6.1.0-21-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.90-1 (2024-05-03) x86_64 GNU/Linux",131
+gt-s20-wrapup,5,cowrie,honeypot,cowrie,"ls ~
+ls: cannot access '/home/labuser/~': No such file or directory",94
+gt-s20-wrapup,6,cowrie,honeypot,cowrie,"df -h | head -n 5
+-bash: /usr/bin/df: cannot execute binary file: Exec format error",110
+gt-s20-wrapup,7,cowrie,honeypot,cowrie,"free -h
+ total used free shared buff/cache available
+Mem: 3G 496M 2G 4M 294M 3G
+Swap: 1G 0B 1G",240
+gt-s20-wrapup,8,cowrie,honeypot,cowrie,"date
+Thu Nov 12 14:12:16 UTC 2026",60
+gt-s20-wrapup,9,cowrie,honeypot,cowrie,"id
+uid=5212(labuser) gid=5212(labuser) groups=5212(labuser)",86
+gt-s20-wrapup,10,cowrie,honeypot,cowrie,"echo done
+done",41
+gt-s01-identity,1,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s01-identity,2,llama-3.1-8b,honeypot,llm,uid=1000/ubuntu uid=1000/ubuntu,31
+gt-s01-identity,3,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s01-identity,4,llama-3.1-8b,honeypot,llm,"ubuntu@ubuntu:~$ hostname
+ubuntu",32
+gt-s01-identity,5,llama-3.1-8b,honeypot,llm,Linux ubuntu 4.15.0-55-generic #59-Ubuntu SMP Tue Jul 2 14:53:41 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux,104
+gt-s01-identity,6,llama-3.1-8b,honeypot,llm,4.15.0-55-generic,17
+gt-s01-identity,7,llama-3.1-8b,honeypot,llm,ubuntu ubuntu adm cdrom sudo dip plugdev netdev sambashare,58
+gt-s01-identity,8,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s01-identity,9,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s01-identity,10,llama-3.1-8b,honeypot,llm,Fri Jul 5 14:53:41 UTC 2019,28
+gt-s02-home-files,1,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s02-home-files,9,llama-3.1-8b,honeypot,llm,"ubuntu@ubuntu:~$ cat notes.txt
+This is a note about the server configuration.",77
+gt-s03-system-info,2,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s03-system-info,3,llama-3.1-8b,honeypot,llm,"ubuntu:x:1000:1000:Ubuntu,,,:/home/ubuntu:/bin/bash",51
+gt-s03-system-info,4,llama-3.1-8b,honeypot,llm,"$ nproc
+4",9
+gt-s03-system-info,10,llama-3.1-8b,honeypot,llm,"$ cat /proc/uptime
+ 123456.12 0.00",35
+gt-s04-paths,1,llama-3.1-8b,honeypot,llm,/bin/bash,9
+gt-s04-paths,2,llama-3.1-8b,honeypot,llm,/bin/ls,7
+gt-s04-paths,3,llama-3.1-8b,honeypot,llm,/bin/pwd,8
+gt-s04-paths,4,llama-3.1-8b,honeypot,llm,$ /usr/bin/python3,18
+gt-s04-paths,10,llama-3.1-8b,honeypot,llm,/bin/bash,9
+gt-s05-navigation,1,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s05-navigation,3,llama-3.1-8b,honeypot,llm,/tmp,4
+gt-s05-navigation,4,llama-3.1-8b,honeypot,llm,tmp/,4
+gt-s05-navigation,6,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s05-navigation,8,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s05-navigation,10,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s06-tmp-lab,3,llama-3.1-8b,honeypot,llm,/tmp/gt_lab,11
+gt-s06-tmp-lab,5,llama-3.1-8b,honeypot,llm,"a.txt
+b.txt",11
+gt-s06-tmp-lab,7,llama-3.1-8b,honeypot,llm,hello,5
+gt-s06-tmp-lab,9,llama-3.1-8b,honeypot,llm,"a.txt
+b.txt",11
+gt-s07-processes,4,llama-3.1-8b,honeypot,llm,$1234,5
+gt-s08-environment,3,llama-3.1-8b,honeypot,llm,HOME=/home/ubuntu,17
+gt-s08-environment,4,llama-3.1-8b,honeypot,llm,/bin/bash,9
+gt-s08-environment,7,llama-3.1-8b,honeypot,llm,/bin/bash,9
+gt-s08-environment,8,llama-3.1-8b,honeypot,llm,"$ umask
+0022",12
+gt-s08-environment,9,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s08-environment,10,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s09-local-net,1,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s09-local-net,2,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s09-local-net,8,llama-3.1-8b,honeypot,llm,127.0.1.1 ubuntu,16
+gt-s10-users,1,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s10-users,2,llama-3.1-8b,honeypot,llm,$ 1000,6
+gt-s10-users,3,llama-3.1-8b,honeypot,llm,$ 1000,6
+gt-s10-users,4,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s10-users,5,llama-3.1-8b,honeypot,llm,$ 1000,6
+gt-s11-text-utils,2,llama-3.1-8b,honeypot,llm,"a
+b",3
+gt-s11-text-utils,3,llama-3.1-8b,honeypot,llm,"test
+b",6
+gt-s11-text-utils,4,llama-3.1-8b,honeypot,llm,"1
+2
+3
+4
+5",9
+gt-s11-text-utils,5,llama-3.1-8b,honeypot,llm,1 /etc/hostname,15
+gt-s11-text-utils,8,llama-3.1-8b,honeypot,llm,"b
+a",3
+gt-s11-text-utils,10,llama-3.1-8b,honeypot,llm,UBUNTU,6
+gt-s13-shell-builtins,1,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s13-shell-builtins,3,llama-3.1-8b,honeypot,llm,ok,2
+gt-s13-shell-builtins,7,llama-3.1-8b,honeypot,llm,ls is /bin/ls,13
+gt-s13-shell-builtins,8,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s13-shell-builtins,9,llama-3.1-8b,honeypot,llm,/bin/ls,7
+gt-s14-disk-memory,3,llama-3.1-8b,honeypot,llm,4.0K /home/ubuntu,20
+gt-s15-time,3,llama-3.1-8b,honeypot,llm,2023-02-16,10
+gt-s15-time,4,llama-3.1-8b,honeypot,llm,1647379200,10
+gt-s16-search-list,6,llama-3.1-8b,honeypot,llm,notes,5
+gt-s16-search-list,7,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s16-search-list,8,llama-3.1-8b,honeypot,llm,./,2
+gt-s16-search-list,9,llama-3.1-8b,honeypot,llm,/tmp,4
+gt-s16-search-list,10,llama-3.1-8b,honeypot,llm,/proc/self/cwd -> /home/ubuntu,30
+gt-s17-lab-home,3,llama-3.1-8b,honeypot,llm,/home/ubuntu/lab1,17
+gt-s17-lab-home,5,llama-3.1-8b,honeypot,llm,"sub
+f1
+f2",9
+gt-s17-lab-home,9,llama-3.1-8b,honeypot,llm,"sub
+f1
+f2",9
+gt-s18-lab-tree,4,llama-3.1-8b,honeypot,llm,/tmp/gt_tree,12
+gt-s18-lab-tree,6,llama-3.1-8b,honeypot,llm,"./a
+./a/b
+./a/b/c.txt",21
+gt-s18-lab-tree,9,llama-3.1-8b,honeypot,llm,/,1
+gt-s19-kernel-readonly,1,llama-3.1-8b,honeypot,llm,x86_64,6
+gt-s19-kernel-readonly,2,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s19-kernel-readonly,3,llama-3.1-8b,honeypot,llm,Linux,5
+gt-s19-kernel-readonly,6,llama-3.1-8b,honeypot,llm,0.00 0.00 0.00,14
+gt-s19-kernel-readonly,7,llama-3.1-8b,honeypot,llm,0.00 0.00,9
+gt-s19-kernel-readonly,8,llama-3.1-8b,honeypot,llm,"lo
+eth0
+wlan0",13
+gt-s19-kernel-readonly,9,llama-3.1-8b,honeypot,llm,up,2
+gt-s19-kernel-readonly,10,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s20-wrapup,1,llama-3.1-8b,honeypot,llm,ubuntu,6
+gt-s20-wrapup,2,llama-3.1-8b,honeypot,llm,/home/ubuntu,12
+gt-s20-wrapup,3,llama-3.1-8b,honeypot,llm,"ubuntu@ubuntu:~$ hostname
+ubuntu",32
+gt-s20-wrapup,9,llama-3.1-8b,honeypot,llm,uid=1000/ubuntu ubuntu@ubuntu:~$,32
+gt-s01-identity,1,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s01-identity,2,qwen-2.5-7b,honeypot,llm,"uid=0(root) gid=1000/ubuntu groups=1000/ubuntu,4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),126(sambashare)",121
+gt-s01-identity,3,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s01-identity,4,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s01-identity,5,qwen-2.5-7b,honeypot,llm,Linux ubuntu 5.4.0-47-generic #50~20.04.1-Ubuntu SMP Fri Nov 5 18:27:03 UTC 2021 x86_64 GNU/Linux,97
+gt-s01-identity,6,qwen-2.5-7b,honeypot,llm,5.4.0-47-generic,16
+gt-s01-identity,7,qwen-2.5-7b,honeypot,llm,root adm cdrom sudo dip plugdev lpadmin sambashare,50
+gt-s01-identity,8,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s01-identity,9,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s01-identity,10,qwen-2.5-7b,honeypot,llm,Wed Oct 11 14:30:00 UTC 2023,28
+gt-s02-home-files,1,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s02-home-files,3,qwen-2.5-7b,honeypot,llm,total 0,7
+gt-s02-home-files,4,qwen-2.5-7b,honeypot,llm,total 0,7
+gt-s02-home-files,6,qwen-2.5-7b,honeypot,llm,"```bash
+total 1
+notes.txt
+```",29
+gt-s02-home-files,9,qwen-2.5-7b,honeypot,llm,hello,5
+gt-s03-system-info,2,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s03-system-info,3,qwen-2.5-7b,honeypot,llm,"ubuntu:x:1000:1000:Ubuntu,,,:/home/ubuntu:/bin/bash",51
+gt-s03-system-info,4,qwen-2.5-7b,honeypot,llm,2,1
+gt-s03-system-info,10,qwen-2.5-7b,honeypot,llm,"cat /proc/uptime
+1684.97",24
+gt-s04-paths,1,qwen-2.5-7b,honeypot,llm,/usr/bin/bash,13
+gt-s04-paths,2,qwen-2.5-7b,honeypot,llm,/usr/bin/ls,11
+gt-s04-paths,3,qwen-2.5-7b,honeypot,llm,/pwd,4
+gt-s04-paths,4,qwen-2.5-7b,honeypot,llm,/usr/bin/python3,16
+gt-s04-paths,7,qwen-2.5-7b,honeypot,llm,total 0,7
+gt-s04-paths,8,qwen-2.5-7b,honeypot,llm,total 0,7
+gt-s04-paths,9,qwen-2.5-7b,honeypot,llm,etc/,4
+gt-s04-paths,10,qwen-2.5-7b,honeypot,llm,/read/bin/bash,14
+gt-s05-navigation,1,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s05-navigation,3,qwen-2.5-7b,honeypot,llm,/tmp,4
+gt-s05-navigation,4,qwen-2.5-7b,honeypot,llm,"```
+total 0
+```",15
+gt-s05-navigation,6,qwen-2.5-7b,honeypot,llm,/home,5
+gt-s05-navigation,8,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s05-navigation,10,qwen-2.5-7b,honeypot,llm,/,1
+gt-s06-tmp-lab,3,qwen-2.5-7b,honeypot,llm,"```plaintext
+/tmp
+```",21
+gt-s06-tmp-lab,7,qwen-2.5-7b,honeypot,llm,cat: a.txt: No such file or directory,37
+gt-s06-tmp-lab,9,qwen-2.5-7b,honeypot,llm,"```plaintext
+total 0
+```",24
+gt-s07-processes,3,qwen-2.5-7b,honeypot,llm,"```
+pgrep: no matching processes found
+```",42
+gt-s07-processes,4,qwen-2.5-7b,honeypot,llm,14789,5
+gt-s08-environment,3,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s08-environment,4,qwen-2.5-7b,honeypot,llm,/bin/bash,9
+gt-s08-environment,7,qwen-2.5-7b,honeypot,llm,/bin/bash,9
+gt-s08-environment,8,qwen-2.5-7b,honeypot,llm,0022,4
+gt-s08-environment,9,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s08-environment,10,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s09-local-net,1,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s09-local-net,2,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s10-users,1,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s10-users,2,qwen-2.5-7b,honeypot,llm,1000,4
+gt-s10-users,3,qwen-2.5-7b,honeypot,llm,1000,4
+gt-s10-users,4,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s10-users,5,qwen-2.5-7b,honeypot,llm,groups: 1000,12
+gt-s10-users,6,qwen-2.5-7b,honeypot,llm,groups ubuntu : ubuntu,22
+gt-s10-users,7,qwen-2.5-7b,honeypot,llm,ubuntu:x:1000:,14
+gt-s10-users,8,qwen-2.5-7b,honeypot,llm,"/home
+ ubuntu",16
+gt-s10-users,9,qwen-2.5-7b,honeypot,llm,total 0,7
+gt-s11-text-utils,1,qwen-2.5-7b,honeypot,llm,hello world,11
+gt-s11-text-utils,2,qwen-2.5-7b,honeypot,llm,"a
+b",3
+gt-s11-text-utils,3,qwen-2.5-7b,honeypot,llm,test,4
+gt-s11-text-utils,4,qwen-2.5-7b,honeypot,llm,"1
+2
+3
+4
+5",9
+gt-s11-text-utils,5,qwen-2.5-7b,honeypot,llm,5,1
+gt-s11-text-utils,8,qwen-2.5-7b,honeypot,llm,"a
+b",3
+gt-s11-text-utils,9,qwen-2.5-7b,honeypot,llm,"a
+b",3
+gt-s11-text-utils,10,qwen-2.5-7b,honeypot,llm,UBUNTU,6
+gt-s12-file-meta,4,qwen-2.5-7b,honeypot,llm,"```plaintext
+/tmp/gt_meta: empty
+```",36
+gt-s13-shell-builtins,1,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s13-shell-builtins,2,qwen-2.5-7b,honeypot,llm,test,4
+gt-s13-shell-builtins,3,qwen-2.5-7b,honeypot,llm,ok,2
+gt-s13-shell-builtins,7,qwen-2.5-7b,honeypot,llm,ls is a shell built-in command,30
+gt-s13-shell-builtins,8,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s13-shell-builtins,9,qwen-2.5-7b,honeypot,llm,/home/ubuntu/bin/ls,19
+gt-s14-disk-memory,3,qwen-2.5-7b,honeypot,llm,2.7G /home/ubuntu,17
+gt-s14-disk-memory,4,qwen-2.5-7b,honeypot,llm,48K /tmp,8
+gt-s15-time,3,qwen-2.5-7b,honeypot,llm,2023-10-04,10
+gt-s15-time,4,qwen-2.5-7b,honeypot,llm,1696497600,10
+gt-s16-search-list,6,qwen-2.5-7b,honeypot,llm,notes,5
+gt-s16-search-list,7,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s16-search-list,8,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s16-search-list,9,qwen-2.5-7b,honeypot,llm,/tmp,4
+gt-s16-search-list,10,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s17-lab-home,3,qwen-2.5-7b,honeypot,llm,/home/ubuntu/lab1,17
+gt-s17-lab-home,5,qwen-2.5-7b,honeypot,llm,sub f1 f2,11
+gt-s17-lab-home,7,qwen-2.5-7b,honeypot,llm,x,1
+gt-s17-lab-home,9,qwen-2.5-7b,honeypot,llm,sub f1 f2,11
+gt-s18-lab-tree,4,qwen-2.5-7b,honeypot,llm,/tmp/gt_tree,12
+gt-s18-lab-tree,6,qwen-2.5-7b,honeypot,llm,"./a/b
+./a/b/c.txt",17
+gt-s18-lab-tree,9,qwen-2.5-7b,honeypot,llm,/,1
+gt-s19-kernel-readonly,1,qwen-2.5-7b,honeypot,llm,x86_64,6
+gt-s19-kernel-readonly,2,qwen-2.5-7b,honeypot,llm,ubuntu-server,13
+gt-s19-kernel-readonly,3,qwen-2.5-7b,honeypot,llm,Linux,5
+gt-s19-kernel-readonly,8,qwen-2.5-7b,honeypot,llm,"enp0s3
+lo",9
+gt-s19-kernel-readonly,9,qwen-2.5-7b,honeypot,llm,connected,9
+gt-s19-kernel-readonly,10,qwen-2.5-7b,honeypot,llm,ubuntu-server,13
+gt-s20-wrapup,1,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s20-wrapup,2,qwen-2.5-7b,honeypot,llm,/home/ubuntu,12
+gt-s20-wrapup,3,qwen-2.5-7b,honeypot,llm,ubuntu,6
+gt-s20-wrapup,5,qwen-2.5-7b,honeypot,llm,Desktop Documents Downloads Music Pictures Videos,54
+gt-s20-wrapup,10,qwen-2.5-7b,honeypot,llm,done,4

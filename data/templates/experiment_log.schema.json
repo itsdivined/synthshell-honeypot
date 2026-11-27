@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiment log row",
+  "type": "object",
+  "required": ["system", "run_number", "command", "reply", "delay_seconds"],
+  "properties": {
+    "record_type": {"enum": ["run", "command"]},
+    "system": {"enum": ["cowrie", "gpt-4o-mini", "llama-3.1-8b", "qwen-2.5-7b"]},
+    "run_number": {"type": "integer"},
+    "session_id": {"type": "string"},
+    "step": {"type": "integer"},
+    "command": {"type": "string"},
+    "reply": {"type": "string"},
+    "delay_seconds": {"type": "number"},
+    "token_count": {"type": ["integer", "null"]},
+    "prompt_tokens": {"type": ["integer", "null"]},
+    "completion_tokens": {"type": ["integer", "null"]},
+    "model_settings": {"type": "object"},
+    "status": {"enum": ["ok", "skipped", "error"]},
+    "skip_reason": {"type": "string"},
+    "break_reason": {
+      "type": ["string", "null"],
+      "enum": ["empty_reply", "contradictory_reply", "ai_self_disclosure", "delay_over_5s", null]
+    },
+    "technique_label": {"type": "string"},
+    "memory": {"type": "string"}
+  }
+}

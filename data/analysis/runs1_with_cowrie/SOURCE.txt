@@ -1,0 +1,3 @@
+Source log: C:\Users\devyani patil\honeypot\data\logs\replay_magazov_20sess_runs1_with_cowrie.jsonl
+Script equivalent: scripts/05_analyse.py (outputs redirected here; did not overwrite data/logs/replay.jsonl or runs5).
+Ground truth present: False
