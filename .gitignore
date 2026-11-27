@@ -36,3 +36,7 @@ _zenodo_meta.json
 *.jpg
 # Exact submitted FPR (exception to *.docx)
 !Patil_Devyani_5034YVIH_Report.docx
+
+# Local viva prep slides (not for GitHub)
+_viva_slides/
+
